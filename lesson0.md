@@ -51,9 +51,9 @@ Although WordPress started as a blogging platform, it can also be used for build
 
 Some examples of these could be: [Kinning Park Complex](http://www.kinningparkcomplex.org/), [Sony Music](https://www.sonymusic.com/), [Duracell Lighting](http://www.duracelllighting.com/), and [The Rolling Stones](http://www.rollingstones.com/)
 
-The introduction of the Rest API into WordPress core a couple of years ago, has also made it possible to write a web or mobile apps that links into WordPress.
+The introduction of the Rest API into WordPress core a couple of years ago, has also made it possible to write web or mobile apps that links into WordPress.
 
-> **Exercise:** Find out what a Content Management System (CMS) is. Could you find another example of CMS?
+> **Exercise:** Find out what a Content Management System (CMS) is. Can you find another example of a popular CMS?
 >
 > **Exercise:** Find more examples of WordPress sites, by type: a blog, a local business website, an e-commerce website, a news site, etc. Which is your favourite? What do you like about it?
 
@@ -64,9 +64,9 @@ In certain situations, there is a slight confusion about why sometimes we talk a
 
 Unfortunately, the short answer is "Yes and No"... which does not help!
 
-So, just to set the record straight, when we talk about WordPress, we mean **WordPress.org**. The Open Source software that you can download for free in the website with the same domain name.
+So, just to set the record straight, when we talk about WordPress, we mean **WordPress.org**. The Open Source software that you can download for free from the website with the same domain name.
 
-On the other hand, **WordPress.com** is a massive multisite installation of WordPress owned by **Automattic**, in turn owned by Matt Mullenberg, one of the two original WordPress developers.
+On the other hand, **WordPress.com** is a massive multisite installation of WordPress owned by **Automattic**, which is in turn owned by Matt Mullenberg, one of the two original WordPress developers.
 
 So basically, WordPress.com runs WordPress and, therefore, the main concepts are the same for both. They both have Pages and Posts, Categories and Tags, a Media Gallery, a Customizer and Settings pages, etc.
 
@@ -80,7 +80,7 @@ _A screengrab of the wordpress.org dashboard._
 
 Remember the 4 freedoms? You are free to modify the software and free to distribute the modification!
 
-But the Dashboard is not the only difference between the two. Although WordPress.com can be free if you have a Free Plan, there are a lot of things you are restricted from doing unless you upgrade to a paid plan, such as, for example, linking the site to your own domain or installing any plugins to extend functionality.  
+But the Dashboard is not the only difference between the two. Although WordPress.com can be free if you have a Free Plan, you are restricted from doing a lot of things unless you upgrade to a paid plan, such as, for example, linking the site to your own domain or installing any plugins to extend functionality.  
 
 Whereas with WordPress.org there are no restrictions whatsoever, but you need to install it on your own host, with your own domain and either do the site maintenance yourself or hire someone to do it for you.
 
@@ -90,7 +90,7 @@ And here is where WordPress developers come in...
 
 As an IT professional, there's several different ways of working with WordPress:
 
-*   You can build websites for clients using, and adapting, existing WordPress **Themes** ( = collection of templates for the frontend ) and **Plugins** ( = extensions to the default WordPress functionality ).
+*   You can build and maintain websites for clients using, and adapting, existing WordPress **Themes** ( = collection of templates for the frontend ) and **Plugins** ( = extensions to the default WordPress functionality ).
 *   You can create WordPress Themes for clients or to sell them on platforms such as the [Theme Directory](https://en-gb.wordpress.org/themes/) or the [Theme Forest](https://themeforest.net).
 *   You can create WordPress Plugins for clients or to sell on the [Plugin Directory](https://en-gb.wordpress.org/plugins/).
 
@@ -127,7 +127,7 @@ Content by Peter.
     7.  Find a Copyright-free image with an appropriate size and use it as the site's header.
     8.  Add a menu with the following items: Home, About and Contact. "Home" should link to the main blog page and "Contact" should link to an email address.
 
-    Do as many of the tasks below as you can but don't worry if you get stuck with any of the steps. There is a lot of information in the [WordPress.com support site](https://en.support.wordpress.com/) or, if you can't find a solution there, please ask on Slack.
+    Do as many of the tasks below as you can but don't worry if you get stuck with any of the steps. There is a lot of information in the [WordPress.com support site](https://en.support.wordpress.com/) or, if you can't find a solution there, please don't hesitate to ask us on Slack.
 
 2.  **Setup your localhost with Docker** -
 3.  **\[Bonus/Optional\]** Third part/optional - Hardest
