@@ -13,7 +13,7 @@
 In 1984, Richard Stallman launched the **GNU Project** and created the **General Public License** (GPL) as a response to his increasing unhappiness with proprietary software, vendor lock-in practices and the resulting loss of personal freedom, as he saw it.
 
 > "When users don't control the program, we call it 'nonfree' or 'proprietary' software. The nonfree program controls the users, and the developer controls the program; this makes the program an instrument of unjust power."
-> ...Richard Stallman, [The Free Software Definition](https://www.gnu.org/philosophy/free-sw.html)
+> - Richard Stallman, [The Free Software Definition](https://www.gnu.org/philosophy/free-sw.html)
 
 This marked the birth of **Free Software**, by which software is considered free if it respects the 4 fundamental freedoms:
 
@@ -60,13 +60,17 @@ The introduction of the Rest API into WordPress core a couple of years ago, has 
 
 ### WordPress.com versus WordPress.org
 
-Include the following points:
+In certain situations, there is a slight confusion about why sometimes we talk about WordPress.com and other times we say WordPress.org. Aren't they both the same?
 
-*   When we say WordPress, we mean WordPress.org
-*   WordPress.com = hosted multisite install, run by Automattic, owned by Matt Mullenberg
-*   Interaction/relationship between the two
+Unfortunately, the short answer is "Yes and No"... which does not help!
 
-Although the Dashboards look quite different, the key concepts (pages, posts, themes, customizer, settings, media gallery, etc.) are the same.
+So, just to set the record straight, when we talk about WordPress, we mean **WordPress.org**. The Open Source software that you can download for free in the website with the same domain name.
+
+On the other hand, **WordPress.com** is a massive multisite installation of WordPress owned by **Automattic**, in turn owned by Matt Mullenberg, one of the two original WordPress developers.
+
+So basically, WordPress.com runs WordPress and, therefore, the main concepts are the same for both. They both have Pages and Posts, Categories and Tags, a Media Gallery, a Customizer and Settings pages, etc.
+
+Even so, their Dashboards (the main screen the user sees after login) look quite different:
 
 ![screengrab of the wordpress.com dashboard](assets/lesson0/wp.com-dashboard.png)
 _A screengrab of the wordpress.com dashboard._
@@ -74,16 +78,23 @@ _A screengrab of the wordpress.com dashboard._
 ![screengrab of the wordpress.org dashboard](assets/lesson0/wp.org-dashboard.png)
 _A screengrab of the wordpress.org dashboard._
 
+Remember the 4 freedoms? You are free to modify the software and free to distribute the modification!
+
+But the Dashboard is not the only difference between the two. Although WordPress.com can be free if you have a Free Plan, there are a lot of things you are restricted from doing unless you upgrade to a paid plan, such as, for example, linking the site to your own domain or installing any plugins to extend functionality.  
+
+Whereas with WordPress.org there are no restrictions whatsoever, but you need to install it on your own host, with your own domain and either do the site maintenance yourself or hire someone to do it for you.
+
+And here is where WordPress developers come in...
 
 ## What do WordPress developers do?
 
 As an IT professional, there's several different ways of working with WordPress:
 
-*   You can build websites for clients using, and adapting, existing WordPress Themes ( = collection of templates for the frontend ) and Plugins ( = extensions to the default WordPress functionality ).
+*   You can build websites for clients using, and adapting, existing WordPress **Themes** ( = collection of templates for the frontend ) and **Plugins** ( = extensions to the default WordPress functionality ).
 *   You can create WordPress Themes for clients or to sell them on platforms such as the [Theme Directory](https://en-gb.wordpress.org/themes/) or the [Theme Forest](https://themeforest.net).
-*   You can create WordPress Plugins for clients or to sell on the [Plugin Repository](https://en-gb.wordpress.org/plugins/).
+*   You can create WordPress Plugins for clients or to sell on the [Plugin Directory](https://en-gb.wordpress.org/plugins/).
 
-Of course, you can also earn a living as a content editor, a blogger or a business owner with a WordPress website. But that'd be outside the scope of this course ;-)
+Of course, you can also earn a living as a content editor, a blogger or a business owner with a WordPress website. But that topic is outside the scope of this course ;-)
 
 We will cover Themes and Plugins extensively during the course but, in the meantime, if you want to find out more, please refer to the following links in the WordPress Codex:
 
