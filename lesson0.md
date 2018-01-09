@@ -12,8 +12,8 @@
 
 In 1984, Richard Stallman launched the **GNU Project** and created the **General Public License** (GPL) as a response to his increasing unhappiness with proprietary software, vendor lock-in practices and the resulting loss of personal freedom, as he saw it.
 
-> "When users don't control the program, we call it 'nonfree' or 'proprietary' software. The nonfree program controls the users, and the developer controls the program; this makes the program an instrument of unjust power"
-> Richard Stallman, [The Free Software Definition](https://www.gnu.org/philosophy/free-sw.html)
+> "When users don't control the program, we call it 'nonfree' or 'proprietary' software. The nonfree program controls the users, and the developer controls the program; this makes the program an instrument of unjust power."
+> ...Richard Stallman, [The Free Software Definition](https://www.gnu.org/philosophy/free-sw.html)
 
 This marked the birth of **Free Software**, by which software is considered free if it respects the 4 fundamental freedoms:
 
@@ -30,9 +30,9 @@ This set the stage for the appearance, one year later, of the term **Open Source
 
 The movement has continued growing since then and nowadays there are many examples of popular Open Source software such as, for example, WordPress, Firefox, React, Python, the Apache web server and the MySQL database.
 
-> **Exercise 1:** Find out more examples of Open Source software.
+> **Exercise:** Find out more examples of Open Source software.
 >
-> **Exercise 2:** Can you think of any software that is "free" (as in you pay £0.00 for it) but would not qualify as Open Source?
+> **Exercise:** Can you think of any software that is "free" (as in you pay £0.00 for it) but would not qualify as Open Source?
 
 If you wish to find out more on this topic, please watch the excellent documentary ["Revolution OS"](https://www.youtube.com/watch?v=4vW62KqKJ5A) on YouTube.
 
@@ -42,21 +42,20 @@ This section has sourced information from:
 * [Make WordPress Training - What is Open Source](https://make.wordpress.org/training/handbook/user-lessons/what-is-open-source/)
 * [Opensource.com - What's the difference between open source software and free software?](https://opensource.com/article/17/11/open-source-or-free-software)
 
+
 ## What is WordPress? WordPress.com versus WordPress.org
 
+WordPress is an Open Source Content Management System (CMS), released in 2003 by Matt Mullenberg and Mike Little. As of 2017, it has 59% of the CMS marketshare and 28% of all websites, worldwide.
 
-### What is WordPress
+Although WordPress started as a blogging platform, it can also be used for building websites (large and small), e-commerce sites (with the WooCommerce plugin), private community platforms (with the BuddyPress plugin), forums (with the bbPress plugin), etc.
 
-Include the following points:
+Some examples of these could be: [Kinning Park Complex](http://www.kinningparkcomplex.org/), [Sony Music](https://www.sonymusic.com/), [Duracell Lighting](http://www.duracelllighting.com/), and [The Rolling Stones](http://www.rollingstones.com/)
 
-*   It's an Open Source Content Management System (CMS)
-*   How it started and by whom.
-*   Market share
-*   Its uses (blog, simple website, large website, multisite, e-commerce, , etc) with examples.
+The introduction of the Rest API into WordPress core a couple of years ago, has also made it possible to write a web or mobile apps that links into WordPress.
 
-> **Exercise 1:** Find out what a Content Management System is.
+> **Exercise:** Find out what a Content Management System (CMS) is. Could you find another example of CMS?
 >
-> **Exercise 2:** Find more examples of WordPress sites, by type: a blog, a local business website, an e-commerce website, a news site, etc. Which is your favourite? What do you like about it?
+> **Exercise:** Find more examples of WordPress sites, by type: a blog, a local business website, an e-commerce website, a news site, etc. Which is your favourite? What do you like about it?
 
 
 ### WordPress.com versus WordPress.org
