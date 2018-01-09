@@ -2,7 +2,7 @@
 
 **What we will learn today?**
 - [What is Open Source?](#what-is-open-source)
-- [What is WordPress? WordPress.com versus WordPress.org](#what-is-wordPress-wordPress-com-versus-wordPress-xworg)
+- [What is WordPress? WordPress.com versus WordPress.org](#user-content-what-is-wordpress-wordpresscom-versus-wordpressorg)
 - [What do WordPress developers do?](#what-do-wordpress-developers-do)
 - [The WordPress working environment](#the-wordpress-working-environment) <!-- TODO Choose proper title -->
 - [Homework](#homework)
@@ -69,17 +69,15 @@ Include the following points:
 Although the Dashboards look quite different, the key concepts (pages, posts, themes, customizer, settings, media gallery, etc.) are the same.
 
 ![screengrab of the wordpress.com dashboard](assets/lesson0/wp.com-dashboard.png)
-
 _A screengrab of the wordpress.com dashboard._
 
 ![screengrab of the wordpress.org dashboard](assets/lesson0/wp.org-dashboard.png)
-
 _A screengrab of the wordpress.org dashboard._
 
 
 ## What do WordPress developers do?
 
-As an IT professional, there's different ways of working with WordPress:
+As an IT professional, there's several different ways of working with WordPress:
 
 *   You can build websites for clients using, and adapting, existing WordPress Themes ( = collection of templates for the frontend ) and Plugins ( = extensions to the default WordPress functionality ).
 *   You can create WordPress Themes for clients or to sell them on platforms such as the [Theme Directory](https://en-gb.wordpress.org/themes/) or the [Theme Forest](https://themeforest.net).
