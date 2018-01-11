@@ -45,7 +45,7 @@ This section has sourced information from:
 
 ## What is WordPress? WordPress.com versus WordPress.org
 
-WordPress is an Open Source Content Management System (CMS), released in 2003 by Matt Mullenberg and Mike Little. As of 2017, it has 59% of the CMS marketshare and 28% of all websites, worldwide.
+WordPress is an Open Source Content Management System (CMS), released in 2003 by Matt Mullenweg and Mike Little. As of 2017, it has 59% of the CMS marketshare and 28% of all websites, worldwide.
 
 Although WordPress started as a blogging platform, it can also be used for building websites (large and small), e-commerce sites (with the WooCommerce plugin), private community platforms (with the BuddyPress plugin), forums (with the bbPress plugin), etc.
 
@@ -66,7 +66,7 @@ Unfortunately, the short answer is "Yes and No"... which does not help!
 
 So, just to set the record straight, when we talk about WordPress, we mean **WordPress.org**. The Open Source software that you can download for free from the website with the same domain name.
 
-On the other hand, **WordPress.com** is a massive multisite installation of WordPress owned by **Automattic**, which is in turn owned by Matt Mullenberg, one of the two original WordPress developers.
+On the other hand, **WordPress.com** is a massive multisite installation of WordPress owned by **Automattic**, which is in turn owned by Matt Mullenweg, one of the two original WordPress developers.
 
 So basically, WordPress.com runs WordPress and, therefore, the main concepts are the same for both. They both have Pages and Posts, Categories and Tags, a Media Gallery, a Customizer and Settings pages, etc.
 
