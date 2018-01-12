@@ -1,14 +1,14 @@
 # WordPress 0
 
 **What we will learn today?**
-- [What is Open Source?](#what-is-open-source)
+- [What is Open Source? GPL and MIT Licenses](#what-is-open-source)
 - [What is WordPress? WordPress.com versus WordPress.org](#user-content-what-is-wordpress-wordpresscom-versus-wordpressorg)
 - [What do WordPress developers do?](#what-do-wordpress-developers-do)
 - [The WordPress working environment](#the-wordpress-working-environment) <!-- TODO Choose proper title -->
 - [Homework](#homework)
 ---
 
-## What is Open Source?
+## What is Open Source? GPL and MIT Licenses
 
 In 1984, Richard Stallman launched the **GNU Project** and created the **General Public License** (GPL) as a response to his increasing unhappiness with proprietary software, vendor lock-in practices and the resulting loss of personal freedom, as he saw it.
 
@@ -28,17 +28,31 @@ A few years later, in 1997, Eric Raymond wrote an essay called **"The Cathedral 
 
 This set the stage for the appearance, one year later, of the term **Open Source** software. Open Source software is a close relative of Free Software but with a stronger focus on the methodology rather than the philosophy.
 
-The movement has continued growing since then and nowadays there are many examples of popular Open Source software such as, for example, WordPress, Firefox, React, Python, the Apache web server and the MySQL database.
+The movement has continued growing since then and nowadays there are many examples of popular Open Source software such as, for example, WordPress, Firefox, React, Python, Node, the Apache and NGINX web servers, just to mention a few.
+
+For example, Node Package Manager is a system for distributing open source code. When someone writes `npm install XXX` they are taking advantage of a vast ecosystem of open source code.
 
 > **Exercise:** Find out more examples of Open Source software.
 >
 > **Exercise:** Can you think of any software that is "free" (as in you pay £0.00 for it) but would not qualify as Open Source?
 
-If you wish to find out more on this topic, please watch the excellent documentary ["Revolution OS"](https://www.youtube.com/watch?v=4vW62KqKJ5A) on YouTube.
+### GPL and MIT Licenses
+
+**Copyleft** is a method for making a program compliant with the 4 freedoms of Free Software, and requiring that all modified and extended versions of the program also be compliant.
+
+According to the GNU Project:
+
+> Certain kinds of rules about the manner of distributing free software are acceptable, when they don't conflict with the central freedoms. For example, copyleft (very simply stated) is the rule that when redistributing the program, you cannot add restrictions to deny other people the central freedoms.
+> Copyleft also provides an incentive for other programmers to add to free software [...] and helps programmers who want to contribute improvements to Free Software get permission to do so.
+
+... some info comparing GPL and MIT ...
+
+If you wish to find out more about Free Software, Open Source and licensing, please watch the excellent documentary ["Revolution OS"](https://www.youtube.com/watch?v=4vW62KqKJ5A) on YouTube.
 
 
-This section has sourced information from:
+These sections have been sourced from:
 * [GNU - Free Software Definition](https://www.gnu.org/philosophy/free-sw.html)
+* [GNU - What is Copyleft?](https://www.gnu.org/copyleft/copyleft.html)
 * [Make WordPress Training - What is Open Source](https://make.wordpress.org/training/handbook/user-lessons/what-is-open-source/)
 * [Opensource.com - What's the difference between open source software and free software?](https://opensource.com/article/17/11/open-source-or-free-software)
 
@@ -51,7 +65,7 @@ Although WordPress started as a blogging platform, it can also be used for build
 
 Some examples of these could be: [Kinning Park Complex](http://www.kinningparkcomplex.org/), [Sony Music](https://www.sonymusic.com/), [Duracell Lighting](http://www.duracelllighting.com/), and [The Rolling Stones](http://www.rollingstones.com/)
 
-The introduction of the Rest API into WordPress core a couple of years ago, has also made it possible to write web or mobile apps that links into WordPress.
+The introduction of the Rest API into WordPress core a couple of years ago, has also made it possible to write web or mobile apps that link into WordPress. We will cover the Rest API later on in the course.
 
 > **Exercise:** Find out what a Content Management System (CMS) is. Can you find another example of a popular CMS?
 >
@@ -91,10 +105,10 @@ And here is where WordPress developers come in...
 As an IT professional, there's several different ways of working with WordPress:
 
 *   You can build and maintain websites for clients using, and adapting, existing WordPress **Themes** ( = collection of templates for the frontend ) and **Plugins** ( = extensions to the default WordPress functionality ).
-*   You can create WordPress Themes for clients or to sell them on platforms such as the [Theme Directory](https://en-gb.wordpress.org/themes/) or the [Theme Forest](https://themeforest.net).
+*   You can create WordPress Themes for clients or to sell them on platforms such as the [Theme Directory](https://en-gb.wordpress.org/themes/) or the [ThemeForest](https://themeforest.net).
 *   You can create WordPress Plugins for clients or to sell on the [Plugin Directory](https://en-gb.wordpress.org/plugins/).
 
-Of course, you can also earn a living as a content editor, a blogger or a business owner with a WordPress website. But that topic is outside the scope of this course ;-)
+Of course, you can also earn a living as a content editor, a blogger or a business owner with a WordPress website. But that topic is outside the scope of this course ;-) .
 
 We will cover Themes and Plugins extensively during the course but, in the meantime, if you want to find out more, please refer to the following links in the WordPress Codex:
 
@@ -127,7 +141,7 @@ Content by Peter.
     7.  Find a Copyright-free image with an appropriate size and use it as the site's header.
     8.  Add a menu with the following items: Home, About and Contact. "Home" should link to the main blog page and "Contact" should link to an email address.
 
-    Do as many of the tasks below as you can but don't worry if you get stuck with any of the steps. There is a lot of information in the [WordPress.com support site](https://en.support.wordpress.com/) or, if you can't find a solution there, please don't hesitate to ask us on Slack.
+    Do as many of the tasks below as you can but don't worry if you get stuck with any of the steps. There is a lot of information in [Easy WP Guide](https://easywpguide.com/wordpress-manual/) and the [WordPress.com support site](https://en.support.wordpress.com/). If you can't find a solution there, please do not hesitate to ask us on Slack.
 
 2.  **Setup your localhost with Docker** -
 3.  **\[Bonus/Optional\]** Third part/optional - Hardest
