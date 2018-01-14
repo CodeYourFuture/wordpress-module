@@ -1,7 +1,7 @@
 # WordPress 0
 ** What we will learn today?**
 - [What is Open Source?](#what-is-open-source)
-- [What is WordPress? WordPress.com versus WordPress.org](#what-is-wordPress-wordPress-com-versus-wordPress-xworg)
+- [What is WordPress? WordPress.com versus WordPress.org](#what-is-wordPress-wordpress.com-versus-wordpress.org)
 - [What do WordPress developers do?](#what-do-wordpress-developers-do)
 - [The WordPress working environment](#the-wordpress-working-environment) <!-- TODO Choose proper title -->
 - [Homework](#homework)
@@ -62,11 +62,10 @@ Content by Peter.
 
 ## Resources
 
-1.  ["The Cathedral and the Bazaar" by Eric S. Raymond](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html)
+1.  [Easy WP Guide WordPress Manual](https://easywpguide.com/)
 2.  [WordPress Codex](https://codex.wordpress.org)
 3.  [WordPress TV](https://wordpress.tv)
-4.  [Resource 4 for Topic 4](https://google.com)
-5.  [Resource 5 for Topic 4](https://google.com)
+4.  ["The Cathedral and the Bazaar" by Eric S. Raymond](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html)
 
 ## Homework
 
@@ -83,11 +82,13 @@ Content by Peter.
     
     Do as many of the tasks below as you can but don't worry if you get stuck with any of the steps. There is a lot of information in the [WordPress.com support site](https://en.support.wordpress.com/) or, if you can't find a solution there, please ask on Slack.
     
-2.  **Setup your localhost with Docker** -
-3.  **\[Bonus/Optional\]** Third part/optional - Hardest
-4.  **Research:**
+2.  **Setup your localhost with Docker**
+    1.  Follow the Docker tutorial above and make sure you have a local WordPress development environment ready for class.
+    2.  Once you have succesfully set it up post an update on Slack, or ask for help if you are struggling to complete
+    3.  Login to the admin interface of your Docker WordPress install and look around. Try replicating some of the steps you completed above for your WordPress.com account in your Docker install — do you notice many differences with the WordPress.com admin interface?
+3.  **Explore and install a plugin**
+    1. Find the plugins section (under Plugins > Add New). Search for a 'contact form' plugin (use the Search field in the top right).
 
-Prepare for the next class
---------------------------
+        - **Don’t just install the first one in the search results** - read reviews, look at screenshots, read the installation instructions and consider what one to choose. 
 
-1.  Read this [Some Tutorial or Video etc...](https://google.com)
+    2. Install and Activate your chosen plugin.
