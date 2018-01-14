@@ -56,11 +56,11 @@ We will cover Themes and Plugins extensively during the course but, in the meant
 
 Of course, you can also earn a living as a content editor, a blogger or a business owner with a WordPress website. But that'd be outside the scope of this course ;-)
 
-## The WordPress working environment
+## The WordPress development environment
 
 _This tutorial is based on my [original blog post](https://wptavern.com/composing-a-wordpress-development-environment-with-docker) on The WordPress Tavern._
 
-**If you don't care about what Docker is for now, feel free to jump to the part where we actually [spin up a WordPress Docker container](https://gist.github.com/petersuhm/086753a461a37bae7b33185eebecbaaf#hello-wordpress).**
+**If you don't care about what Docker is for now, feel free to jump to the part where we actually [spin up a WordPress Docker container](#hello-wordpress).**
 
 In the last few years, a wave of virtualization technologies have swept through our WordPress development environments. The one that has sounded the most promising to me has been Docker: lightweight and flexible. Yet, until recently, getting Docker up and running was an overwhelming task – especially on a non-Linux machine. Getting Docker to work required running it inside of a virtual Linux machine and configuring stuff like port forwarding and other parts of the network yourself.
 
