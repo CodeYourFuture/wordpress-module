@@ -12,7 +12,7 @@
 **Before we begin...**
 
 * You should have finished a pre-class lesson that showed you how to set up a local installation of WordPress on your machine using Docker? Let the mentors know if you have not completed this yet.
-* WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, we will use uses similar concept to what you have learned so far — variables, functions, arrays, conditional statements and so on. See [Appendix 1: PHP Quick Start](#appendix-1:-php-quick-start) for a short overview.
+* WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, we will use uses similar concept to what you have learned so far — variables, functions, arrays, conditional statements and so on. See [PHP Quick Start](#appendix-1-php-quick-start) in the appendix for a short overview.
 
 ## One
 
@@ -32,7 +32,7 @@ The choice of template file that WordPress makes can be visualised with the foll
 
 ![Visualisation of the Template Hierarchy](assets/lesson1/wp-hierarchy.png)
 
-**<a href="https://developer.wordpress.org/files/2014/10/wp-hierarchy.png" target="_blank">View a larger version**</a> (Opens in a new window)
+**<a href="https://developer.wordpress.org/files/2014/10/wp-hierarchy.png" target="_blank">View a larger version**</a>
 
 This shows you all the different possible template files you could have in your theme related to the Hierarchy. It may look a little complicated… but the good news is that they are all optional apart from one — the `‘index.php’` file. If you only had this file in your theme ALL pages would use this to output the content on that page. 
 
@@ -60,7 +60,7 @@ So, now a quick quiz… (Use the Template Hierarchy image above to help you, the
 
 * Q1. Our user is still on the site home page but we have deleted the `‘front-page.php’` file from our theme. What template file will be used for the home page now? 
 * Q2. We want to change what outputs on all pages. What template file from above will we need to alter? 
-* Q3. We want all pages to be the same apart from an About page that we have just created. What do we need to do to have a template file specific to the this page only? (Note: the page URL will be ‘http:///mysite.com/about’)
+* Q3. We want all pages to be the same apart from an About page that we have created. What do we need to do to have a template file specific to the this page only? (Note: the page URL will be ‘http:///mysite.com/about’)
 
 Now that you have the knowledge to modify theme files, you may be tempted to start changing the your favourite theme’s template files to do what you want. But before you do, consider this — what happens if the theme updates at a later date with new features or bug-fixes? Then there is a good chance you will lose your changes! It is always better to create a child theme.
 
@@ -84,9 +84,10 @@ Para
 2.  **Excercise** 
 3.  **Excercise** 
     
-## Appendix 1: PHP Quick Start
+## Appendix 1 PHP Quick Start
     
-## Appendix 2: Quiz Answers
+## Appendix 2 Quiz Answers
+
 * A1. ‘page.php’
 * A2. ‘page.php’
 * A3. We need to create a ‘page-about.php’ template file
