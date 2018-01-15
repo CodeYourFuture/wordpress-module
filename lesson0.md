@@ -4,7 +4,7 @@
 - [What is Open Source?](#what-is-open-source)
 - [What is WordPress? WordPress.com versus WordPress.org](#what-is-wordPress-wordpress.com-versus-wordpress.org)
 - [What do WordPress developers do?](#what-do-wordpress-developers-do)
-- [The WordPress working environment](#the-wordpress-working-environment)
+- [The WordPress development environment](#the-wordpress-development-environment)
 - [Homework](#homework)
 ---
 
