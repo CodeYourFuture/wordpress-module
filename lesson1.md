@@ -12,7 +12,7 @@
 **Before we begin...**
 
 * You should have finished a pre-class lesson that showed you how to set up a local installation of WordPress on your machine using Docker? Let the mentors know if you have not completed this yet.
-* WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, we will use uses similar concept to what you have learned so far — variables, functions, arrays, conditional statements and so on. See [PHP Quick Start](#appendix-1-php-quick-start) in the appendix for a short overview.
+* WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, although the syntax is a little different, you will be able to use what you have learned so far in JavaScript (such as variables, functions, arrays, conditional statements and so on) to help you. See [PHP Quick Start](#appendix-1-php-quick-start) in the appendix for a short overview of what is different.
 
 ## One
 
