@@ -314,10 +314,10 @@ If you are working on a WordPress theme instead, the process will be exactly the
         2.  Once you have succesfully set it up post an update on Slack, or ask for help if you are struggling to complete
         3.  Login to the admin interface of your Docker WordPress install and look around. Try replicating some of the steps you completed above for your WordPress.com account in your Docker install — do you notice many differences with the WordPress.com admin interface?
 
-    3.  **Explore and install a plugin**
+    3.  **Explore and install a plugin into your local WordPress.org install**
         1. Find the plugins section (under Plugins > Add New). Search for a 'contact form' plugin (use the Search field in the top right).
 
-            - **Don’t just install the first one in the search results** - read reviews, look at screenshots, read the installation instructions and consider what one to choose.
+            - **Don’t just install the first one in the search results** - read reviews, look at screenshots, read the installation instructions and consider which one to choose.
 
         2. Install and Activate your chosen plugin.
 
