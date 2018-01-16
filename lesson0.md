@@ -1,8 +1,8 @@
 # WordPress 0
 
 **What we will learn today?**
-- [What is Open Source?](#what-is-open-source)
-- [What is WordPress? WordPress.com versus WordPress.org](#what-is-wordPress-wordpress.com-versus-wordpress.org)
+- [What is Open Source? GPL and MIT Licenses](#what-is-open-source-GPL-and-MIT-Licenses)
+- [What is WordPress? WordPress.com versus WordPress.org](#what-is-wordPress-wordpresscom-versus-wordpressorg)
 - [What do WordPress developers do?](#what-do-wordpress-developers-do)
 - [The WordPress development environment](#the-wordpress-development-environment)
 - [Homework](#homework)
