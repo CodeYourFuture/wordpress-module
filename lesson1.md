@@ -30,7 +30,7 @@ Whether you are building your own theme, or modifying someone else’s with a ch
 
 The choice of template file that WordPress makes can be visualised with the following image representing the Template Hierarchy:
 
-![Visualisation of the Template Hierarchy](assets/lesson1/wp-hierarchy.png)
+![Visualisation of the Template Hierarchy](./assets/lesson1/wp-hierarchy.png)
 
 [View a larger version](https://developer.wordpress.org/files/2014/10/wp-hierarchy.png)
 
