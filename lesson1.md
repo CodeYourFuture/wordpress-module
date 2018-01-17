@@ -5,7 +5,7 @@
 - [Two](#two)
 - [The Template Hierarchy](#the-template-hierarchy)
 - [Child Themes](#child-themes)
-- [The WordPress Loop](#the-Wordpress-loop)
+- [The WordPress Loop and WP Query](#the-wordpress-loop-and-wp-query)
 - [Homework](#homework)
 ---
 
@@ -68,15 +68,136 @@ Now that you have the knowledge to modify theme files, you may be tempted to sta
 
 Para
 
-## The WordPress Loop
+## The WordPress Loop and WP Query
 
-Para
+### The WordPress Loop
+
+> "The Loop" is the main process of WordPress. You use The Loop in your template files to show posts to visitors. You could make templates without The Loop, but you could only display data from one post.
+
+Simply put, the Loop checks if there are posts or pages to be displayed and then displays them. It looks a bit like this:
+
+```
+<?php
+    if ( have_posts() ) :
+        while ( have_posts() ) :
+            the_post();
+            // Post Content here
+        endwhile;
+    endif;
+?>
+```
+
+This is a PHP code block starting with an `if` statement. This has a `have_posts()` condition, which is a built-in WordPress boolean function (i.e. it will return `TRUE` or `FALSE`) that checks the database for content — if `TRUE` the content will be returned and the `while` statement will loop through each result. So, what content will be displayed? Here are some typical examples:
+
+* **The user is viewing a page** — The loop will fetch and display the content of that page
+* **The user is viewing a post** — The loop will fetch and display the content of that post
+* **The user is browsing a category** — The loop will fetch and display the latest posts in that specific category
+
+You'll find the loop used throughout WordPress themes and is the main way that content is pulled from your database and output onto your site. 
+
+#### The Loop in action
+
+Let's take a look at `index.php` in our twentyseventeen theme — find it and open it up in your code editor. Can you find where the `while` loop begins and ends?
+
+```
+<?php 
+/* Start the Loop */
+while ( have_posts() ) : the_post();
+  get_template_part( 'template-parts/post/content', get_post_format() );
+endwhile;
+?>
+```
+
+The `get_template_part()` line is WordPress function that, as you can guess, gets a template part from elsewhere in our theme — the first parameter is the file location and the second parameter `get_post_format()` is another built-in WordPress function that returns the type of content being fetched (e.g. post, page, etc).
+
+> This is an example of breaking up code into modular, resuable parts — this is good programming, right? Remember using partials in Handlebars? It's the same idea here.
+
+Let's open the content template part for a page. Find the following file in the twentyseventeen folder and open it:
+
+> `/template-parts/post/content-page.php`
+
+And you will see the following:
+
+```
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php twentyseventeen_edit_link( get_the_ID() ); ?>
+	</header><!-- .entry-header -->
+	<div class="entry-content">
+		<?php
+			the_content();
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+</article><!-- #post-## -->
+```
+
+You can see a mixture of HTML (`<article>`, `<header>`, `<h1>` etc) and PHP code. This is the content that will output for each iteration of our `while` loop. Try and edit the code to see what effect it has on the page output.
+
+**Exercise** 
+
+* Can you output the current date after the `<header>` element using HTML?
+* Can you make the date dynamic using PHP? Can you add the current time as well? HINT: Google 'PHP date' and remember, any PHP code needs to be in PHP blocks.
+
+## WP_Query
+
+So by now you may be thinking, that's okay but what if I wan't to fetch my own content and display it? Can we use the loop wherever we want? Can we have multiple loops on a page? For this we use WP_Query, a powerful and flexible WordPress class that allows us to use the Loop with our own options (arguments).
+
+**Exercise** 
+
+* Can you think of reasons why you may want to use WP_Query in your theme? Here a couple of examples, try and think of some more...
+  - To fetch and display related posts to the post currently being viewed
+  - To display posts from two categories at once
+
+A typical WP_Query code block looks like this:
+
+```
+<?php 
+// WP_Query arguments
+$args = array(
+	'post_type' => array( 'post' ), // Set the content type to 'post'
+  'category_name' => 'news', // fetch posts in the news category'
+	'posts_per_page' => '5', // fetch 5 posts at a time'
+	'orderby' => 'rand', // order the posts randomly'
+);
+
+// The Query
+$queryLatestNews = new WP_Query( $args );
+
+// The Loop
+if ( $queryLatestNews->have_posts() ) {
+	while ( $queryLatestNews->have_posts() ) {
+		$queryLatestNews->the_post();
+		// Post Content here
+	}
+} else {
+	echo '<p>Sorry, no posts found</p>';
+}
+
+// Restore original Post Data
+wp_reset_postdata();
+?>
+```
+
+First we set our arguments — in the above example we want to fetch five (`'posts_per_page'`), random (`'orderby'`) posts (`'post_type'`) in the news category (`'category_name'`). We then pass this to a new WP_Query instance and use a WordPress Loop to output the results of our query.
+
+> Our loop also has an else statement to handle the output for when there are no results.
+
+> The last line `wp_reset_postdata();` is important — it terminates this WP Query instance and allows to add further instances.
+
+There are lots of available arguments you can pass to WP Query. Have a look at this code snippet and think to yourself how you could use some of these arguments in your theme:
+
+[Arguments list for WP Query](https://gist.github.com/luetkemj/2023628)
 
 ## Resources
 
-1.  [One](https://example.com/)
-2.  [Two](https://example.com/)
-3.  [Three](https://example.com/)
+1.  [The Loop in Action](https://codex.wordpress.org/The_Loop_in_Action)
+2.  [WP Query Codex Docs](https://codex.wordpress.org/Class_Reference/WP_Query)
+3.  [Interactive WP Query code generator](https://generatewp.com/wp_query/)
 
 ## Homework
 
