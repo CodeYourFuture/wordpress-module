@@ -32,7 +32,7 @@ The choice of template file that WordPress makes can be visualised with the foll
 
 ![Visualisation of the Template Hierarchy](assets/lesson1/wp-hierarchy.png)
 
-**<a href="https://developer.wordpress.org/files/2014/10/wp-hierarchy.png" target="_blank">View a larger version**</a>
+[View a larger version](https://developer.wordpress.org/files/2014/10/wp-hierarchy.png)
 
 This shows you all the different possible template files you could have in your theme related to the Hierarchy. It may look a little complicated… but the good news is that they are all optional apart from one — the `‘index.php’` file. If you only had this file in your theme ALL pages would use this to output the content on that page. 
 
@@ -85,7 +85,37 @@ Para
 3.  **Excercise** 
     
 ## Appendix 1 PHP Quick Start
-    
+
+* PHP (Hypertext Preprocessor) is a widely-used, open-source server-side scripting language that is well suited to web development.
+* PHP files can contain text, HTML, CSS, JavaScript, and PHP code and have a file extension ".php".
+* PHP is commonly used as part of a LAMP server stack (Linux, Apache, MySQL, and PHP). MySQL is a relational database system.
+* A PHP syntax block begins and ends like so:
+```
+<?php
+// Your code here
+?>
+```
+* Variable are declared with a dollar sign, e.g. a variable called ‘a’ with a value of 1 looks like so:
+```
+<?php
+  $a = 1;
+?>
+```
+* Comments in PHP look like so:
+```
+<?php
+// This is a single-line comment
+
+# This is also a single-line comment
+
+/*
+This is a multiple-lines comment block
+that spans over multiple
+lines
+*/
+?>
+```
+
 ## Appendix 2 Quiz Answers
 
 * A1. ‘page.php’
