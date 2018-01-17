@@ -18,7 +18,7 @@
 
 **Before we start, we would like to point out that, from now on, when we talk about WordPress we mean WordPress.org**.
 
-This section will be 100% hands on and we will learn the key WordPress terms and concepts by using them. To achieve this, we will work with the local WordPress installation from [Lesson0](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md))'s exercises.
+This section will be 100% hands on and we will learn the key WordPress terms and concepts by using them. To achieve this, we will work with the local WordPress installation from [Lesson0](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md)'s exercises.
 
 Concept | What is it? | When or where do we use it?
 --------|-------------|----------------------------
@@ -44,28 +44,29 @@ Video | .mp4 .m4v (MPEG-4) .mov (QuickTime) .wmv (Windows Media Video) .avi .mpg
 Audio | .mp3 .m4a .ogg .wav
 Other | .pdf
 
-The maximum file size allowed will vary depending on the website hosting provider but it is important to keep in mind that big image files are often the key factor in slowing down a website.
+The maximum file size allowed will vary depending on the website hosting provider. It is important, though, to keep in mind that big image file sizes are often the key factor in slowing down a website.
 
-> Exercise: Open Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) page and run the Mobile and Desktop speed tests for these two websites: [Iceland](http://iceland.co.uk/) and [Argos](http://www.argos.co.uk/) How do they compare?
-> Have a look at Google's **Optimisation Recommendations** for both. What type of improvements are highlighted?
+> Exercise: Open Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) page and run the test for these two websites: [Iceland](http://iceland.co.uk/) and [Argos](http://www.argos.co.uk/)
+> How do they compare? Have a look at Google's **Optimisation Recommendations** for both. What type of improvements do they highlight?
 
-Video and Audio can also be embedded onto a page or post from the major platforms, such as YouTube and Vimeo, simply by copying and pasting the URL. This can be useful if the file sizes are large.
+Video and Audio can also be embedded major platforms, such as YouTube and Vimeo, simply by copying and pasting the URL onto the page or post content. This can be useful if the file sizes are large.
 
 Some widgets facilitate the inclusion of Media in other parts of the website, such as the sidebar or the footer. Also, some themes allow Media in other parts of the website, such as the header.
 
-All media files uploaded onto the site can be viewed, and some of their settings edited, from the **Media Gallery**.
+All media files uploaded onto the site can be viewed (and their settings edited) from the **Media Gallery**.
 
 > Exercise: Upload or embed different types of Media inside one of your posts of pages: Images, Video and Audio.
-> What is the difference between image Title, Caption, Alt Text and Description? Are they all needed?
+> What is the difference between image Title, Caption, Alt Text and Description? Are they always needed? Why?
 >
 > Exercise: Use 4 or 5 images to create an image gallery. Try out the different options that come with WordPress by default, for example different image sizes, alignments and links.
 > Is there anything you'd like to do with the Gallery but can't?
 
 ### Settings, Customizer, and Tools
 
-> Exercise: Log into your local WordPress website and have a look at the various options in the **Settings menu**. **Give than various tasks, other than the ones from Lesson0. (inc. Permalinks)**
+> Exercise: Log into your local WordPress website and have a look at the various options in the **Settings menu**. If you haven't done so yet, do tasks v and vi from Lesson 0's first [Homework](https://github.com/CodeYourFuture/wordpress-module/blob/carmemias-lesson1/lesson0.md#homework) exercise.
+> Now have a look at the Settings > Permalinks section. What do you think it does?
 >
-> Exercise: Now go open the **Customizer**. **Give them various tasks, inc. video header, font colours, etc.**
+> Exercise: Now go open the **Customizer**. If your theme allows it, add a video to the Home page header and change the background colour and title font.
 > Are the widgets here the same as the widgets we looked at earlier? How about the menus? Make changes to either of them here and see if they show in the other Widgets/Menu page.
 >
 > Exercise: Look at the **Tools menu** > **Import** and **Export** options. In which situations do you think they would be useful?
@@ -81,7 +82,7 @@ Read what the **WordPress Codex** says about [User Roles](https://codex.wordpres
 
 Web Hosting with PHP and MySQL database.
 
-Open one template file and show them <?php ... ?> amongst HTML.
+Open one template file and show them the PHP code amongst HTML.
 
 View database of exercise install. Show them wp-post table, point out following columns: ID, post-title, post-content, attached-media, post-type, etc.
 
@@ -146,9 +147,9 @@ Para
 
 ## Homework
 
-1.  **Excercise**
-2.  **Excercise**
-3.  **Excercise**
+1.  **Exercise**: Change your site's theme to `Simppeli`. Are all website settings kept? and how about the customisations? Do you have as much choice as with the `twentyseventeen` theme?
+2.  **Exercise**
+3.  **Exercise**
 
 ## Appendix 1 PHP Quick Start
 
