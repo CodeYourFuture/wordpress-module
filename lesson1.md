@@ -16,9 +16,9 @@
 
 ## Basic Concepts
 
-We will start Lesson 1 going over the work done before the start of the course (see [Lesson0](https://github.com/codeyourfuture/wordpress-module/lesson0.md)).
+**Before we start, we would like to point out that, from now on, when we talk about WordPress we mean WordPress.org**.
 
-We will also use the exercises to learn some of the basic WordPress concepts and clarify any confusions that may arise.
+This section will be 100% hands on and we will learn the key WordPress terms and concepts by using them. To achieve this, we will work with the local WordPress installation from [Lesson0](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md))'s exercises.
 
 Concept | What is it? | When or where do we use it?
 --------|-------------|----------------------------
@@ -35,26 +35,47 @@ Theme | |
 
 ### Media
 
-Inside pages and posts, also in header (via Customizer), footer and sidebar (with a Widget).
+WordPress allows you to upload the following Media types onto your site:
 
-Types and formats.
+Media | Formats allowed
+------|-----------------
+Images | .jpg .jpeg .png .gif .ico
+Video | .mp4 .m4v (MPEG-4) .mov (QuickTime) .wmv (Windows Media Video) .avi .mpg .ogv (Ogg) .3gp (3GPP) .3g2 (3GPP2)
+Audio | .mp3 .m4a .ogg .wav
+Other | .pdf
 
-Optimise Image sizes and dimensions. Mention page speed optimisation.
+The maximum file size allowed will vary depending on the website hosting provider but it is important to keep in mind that big image files are often the key factor in slowing down a website.
 
-> Exercise: Try using different types of Media inside one of your posts of pages: Images, Video and Audio.
+> Exercise: Open Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) page and run the Mobile and Desktop speed tests for these two websites: [Iceland](http://iceland.co.uk/) and [Argos](http://www.argos.co.uk/) How do they compare?
+> Have a look at Google's **Optimisation Recommendations** for both. What type of improvements are highlighted?
+
+Video and Audio can also be embedded onto a page or post from the major platforms, such as YouTube and Vimeo, simply by copying and pasting the URL. This can be useful if the file sizes are large.
+
+Some widgets facilitate the inclusion of Media in other parts of the website, such as the sidebar or the footer. Also, some themes allow Media in other parts of the website, such as the header.
+
+All media files uploaded onto the site can be viewed, and some of their settings edited, from the **Media Gallery**.
+
+> Exercise: Upload or embed different types of Media inside one of your posts of pages: Images, Video and Audio.
+> What is the difference between image Title, Caption, Alt Text and Description? Are they all needed?
 >
-> Exercise: Use 4 or 5 images to create an image gallery. Try out the different options that come with WordPress by default.
+> Exercise: Use 4 or 5 images to create an image gallery. Try out the different options that come with WordPress by default, for example different image sizes, alignments and links.
 > Is there anything you'd like to do with the Gallery but can't?
 
 ### Settings, Customizer, and Tools
 
-Ask them to play with the 3 pages. Ask for various volunteers to go over each (inc. Permalinks) and explain to the rest of the group. Prompt with questions if anything has been skipped that is worth pointing out.
+> Exercise: Log into your local WordPress website and have a look at the various options in the **Settings menu**. **Give than various tasks, other than the ones from Lesson0. (inc. Permalinks)**
+>
+> Exercise: Now go open the **Customizer**. **Give them various tasks, inc. video header, font colours, etc.**
+> Are the widgets here the same as the widgets we looked at earlier? How about the menus? Make changes to either of them here and see if they show in the other Widgets/Menu page.
+>
+> Exercise: Look at the **Tools menu** > **Import** and **Export** options. In which situations do you think they would be useful?
+> Export the content of your exercise website onto a file. Swap files with the person sitting next to you. Import each other's content. Why do you think we are made to choose a user name? Would you always want to import the images? Why?
 
 ### Users and Roles
 
 Read what the **WordPress Codex** says about [User Roles](https://codex.wordpress.org/Roles_and_Capabilities)
 
-> Exercise: Have a look at the [New Yorker](https://www.newyorker.com/)'s WordPress website. Which user roles do you think they need to use? Why?
+> Exercise: Have a look at the [New Yorker](https://www.newyorker.com/)'s WordPress website. Which user roles do you think they use? Why?
 
 ## WordPress Backend and Folder Structure
 
