@@ -32,7 +32,7 @@ The choice of template file that WordPress makes can be visualised with the foll
 
 ![Visualisation of the Template Hierarchy](./assets/lesson1/wp-hierarchy.png)
 
-[View a larger version](https://developer.wordpress.org/files/2014/10/wp-hierarchy.png)
+[View a larger version](https://raw.githubusercontent.com/CodeYourFuture/wordpress-module/master/assets/lesson1/wp-hierarchy.png)
 
 This shows you all the different possible template files you could have in your theme related to the Hierarchy. It may look a little complicated… but the good news is that they are all optional apart from one — the `‘index.php’` file. If you only had this file in your theme ALL pages would use this to output the content on that page. 
 
