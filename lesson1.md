@@ -80,14 +80,81 @@ Read what the **WordPress Codex** says about [User Roles](https://codex.wordpres
 
 ## WordPress Backend and Folder Structure
 
-Web Hosting with PHP and MySQL database.
+To run a WordPress website, we need a web hosting package with PHP and one [MySQL](https://dev.mysql.com/) database.
 
-Open one template file and show them the PHP code amongst HTML.
+### Brief introduction to the MySQL database
 
-View database of exercise install. Show them wp-post table, point out following columns: ID, post-title, post-content, attached-media, post-type, etc.
+**MySQL** is an Open Source **relational** database. In a relational database, data is grouped in tables according to what they represent. Each table has at least two columns, the first of which is always a unique id number. Each row represents a data entry.
 
---------
-After this, have a quick look at the contents of the wordpress.org folder. Pointing out the "core" folders and then the wp-content folders: plugins, themes and uploads.
+For example, in WordPress, there a table for posts (normally called `wp_posts`) with columns such as: ID, post_author, post_date, post_content, post_title, post_status, etc.
+
+Example `wp_posts`:
+
+ID | post_author | post_date | post_content | post_title | post_status
+---|-------------|-----------|--------------|------------|------------
+1 | 1 | 2017-06-07 10:05:32 | Welcome to WordPress. This is your... | Hello world! | publish
+2 | 1 | 2017-06-08 17:47:50 | Repository-hosted Themes are re... | My opinion on Themes | publish
+
+And another table for users (normally called `wp_users`) with columns such as ID, user_login, user_email, user_pass (it's content is encrypted), display_name, etc.
+
+Example `wp_users`:
+ID | user_login | user_email | user_pass | display_name
+---|------------|------------|-----------|-------------
+1 | lance | lance@gmail.com | $P$BSpbh5H3XbtH... | themedemos
+
+Notice that the `post_author` column in the `wp_posts` table contains an integer instead of a name. This corresponds to the value in the `wp_users` `ID` column corresponding to the post author. The tables `wp_posts` and `wp_users` "relate" (or are connected) to each other via that unique user ID.
+
+### PHP
+
+According to the [PHP Manual](http://php.net/manual/en/intro-whatis.php):
+
+> PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
+
+The WordPress core is written in PHP and so are WordPress Themes and Plugins, at least partly. You can see how PHP interacts with HTML in the `twentyseventeen/page.php` Theme template:
+
+```php
+<?php
+/**
+ * The template for displaying all pages
+ */
+
+get_header(); ?>
+
+<div class="wrap">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			<?php
+			while ( have_posts() ) : the_post();
+
+				get_template_part( 'template-parts/page/content', 'page' );
+
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
+			endwhile; // End of the loop.
+			?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+</div><!-- .wrap -->
+
+<?php get_footer(); ?>
+```
+
+All the code between the `<?php ... ?>` tags is PHP, the rest is HTML.
+
+> Exercise: Have a look at the example code above and compare it with the source code of one of your own WordPress site pages. Try to work out what the WordPress PHP code does.
+
+Even though the bulk of WordPress core is in PHP, the newest additions to WordPress have been written in Backbone (the new Customizer) and React (the Gutenberg editor) as it slowly starts to move towards Javascript.
+
+We will look in more detail at Themes and template files later on today.
+
+### WordPress Folder Structure
+
+After this, have a quick look at the contents of the wordpress.org folder. Pointing out the "core" folders and then the `wp-content` folders: plugins, themes and uploads.
 
 ## The Template Hierarchy
 
