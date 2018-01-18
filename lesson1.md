@@ -98,9 +98,10 @@ ID | post_author | post_date | post_content | post_title | post_status
 And another table for users (normally called `wp_users`) with columns such as ID, user_login, user_email, user_pass (it's content is encrypted), display_name, etc.
 
 Example `wp_users`:
+
 ID | user_login | user_email | user_pass | display_name
 ---|------------|------------|-----------|-------------
-1 | lance | lance@gmail.com | $P$BSpbh5H3XbtH... | themedemos
+1 | lance | lance@gmail.com | $P$BSpbh5H3XbtH | themedemos
 
 Notice that the `post_author` column in the `wp_posts` table contains an integer instead of a name. This corresponds to the value in the `wp_users` `ID` column corresponding to the post author. The tables `wp_posts` and `wp_users` "relate" (or are connected) to each other via that unique user ID.
 
