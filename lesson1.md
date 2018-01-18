@@ -101,7 +101,7 @@ Example `wp_users`:
 
 ID | user_login | user_email | user_pass | display_name
 ---|------------|------------|-----------|-------------
-1 | lance | lance@gmail.com | $P$BSpbh5H3XbtH | themedemos
+1 | lance | lance@gmail.com | $P$BSpbh5H3XbtH | Lance Smith
 
 Notice that the `post_author` column in the `wp_posts` table contains an integer instead of a name. This corresponds to the value in the `wp_users` `ID` column corresponding to the post author. The tables `wp_posts` and `wp_users` "relate" (or are connected) to each other via that unique user ID.
 
@@ -145,7 +145,7 @@ get_header(); ?>
 <?php get_footer(); ?>
 ```
 
-All the code between the `<?php ... ?>` tags is PHP, the rest is HTML.
+All code between the `<?php ... ?>` tags is PHP, the rest is HTML.
 
 > Exercise: Have a look at the example code above and compare it with the source code of one of your own WordPress site pages. Try to work out what the WordPress PHP code does.
 
@@ -155,7 +155,9 @@ We will look in more detail at Themes and template files later on today.
 
 ### WordPress Folder Structure
 
-After this, have a quick look at the contents of the wordpress.org folder. Pointing out the "core" folders and then the `wp-content` folders: plugins, themes and uploads.
+We will have a look at the WordPress folder structure together in class and explain what goes where.
+
+> Exercise: If you haven't done so yet, [download WordPress](https://wordpress.org) and unzip the file.
 
 ## The Template Hierarchy
 
