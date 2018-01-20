@@ -274,7 +274,7 @@ add_action( 'wp_enqueue_scripts', 'my_child_theme_enqueue_styles' );
 > 2. We want the page title to be all caps and a nice bright colour. We also want the photo to float to the left and have a right padding of 1em. We don't want any styling changes inline! In which file should you make them instead?
 > 3. Now we want to add a special section just below the page content. This section will have a pale yellow background, a padding of 3em and some centered text saying "Get in touch!". This text should link to your email. In which file should you make the changes?
 
-We would encourage you to keep playing and make experiments with your new Child Theme. If there is something you don't know how to do, please refer to the [WordPress Codex](https://codex.wordpress.org).
+
 
 ## The WordPress Loop
 
@@ -289,7 +289,7 @@ Para
 ## Homework
 
 1.  **Exercise**: Change your site's theme to `Simppeli`. Are all website settings kept? and how about the customisations? Do you have as much choice as with the `twentyseventeen` theme?
-2.  **Exercise**
+2.  **Exercise**: We would encourage you to keep playing and make experiments with your new Child Theme. If there is something you don't know how to do, please refer to the [WordPress Codex](https://codex.wordpress.org). Show us the end result next week! 
 3.  **Exercise**
 
 ## Appendix 1 PHP Quick Start
