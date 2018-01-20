@@ -18,7 +18,7 @@
 
 **Before we start, we would like to point out that, from now on, when we talk about WordPress we mean WordPress.org**.
 
-To log into your local WordPress install, type `localhost/wp-login.php` into the browser's address bar. Use the username and password you typed in during the 5-minute installation process.
+To log into your local WordPress install, type `localhost/wp-login.php` in the browser's address bar. Use the username and password you typed in during the 5-minute installation process.
 
 In this section we will learn the key WordPress terms and concepts by using them, in a 100% hands-on way, with the local WordPress installation from [Lesson0](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md)'s exercises.
 
@@ -51,7 +51,7 @@ The maximum file size allowed will vary depending on the website hosting provide
 > Exercise: Open Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) page and run the test for these two websites: [Iceland](http://iceland.co.uk/) and [Argos](http://www.argos.co.uk/)
 > How do they compare? Have a look at Google's **Optimisation Recommendations** for both. What type of improvements do they highlight?
 
-Video and Audio can also be embedded major platforms, such as YouTube and Vimeo, simply by copying and pasting the URL onto the page or post content. This can be useful if the file sizes are large.
+Video and Audio can also be embedded from major platforms such as YouTube and Vimeo. Simply copy and paste the URL onto the page or post content. This can be useful if the file sizes are large.
 
 Some widgets facilitate the inclusion of Media in other parts of the website, such as the sidebar or the footer. Also, some themes allow Media in other parts of the website, such as the header.
 
@@ -65,18 +65,18 @@ All media files uploaded onto the site can be viewed (and their settings edited)
 
 ### Settings, Customizer, and Tools
 
-> Exercise: Log into your local WordPress website and have a look at the various options in the **Settings menu**. If you haven't done so yet, do tasks v and vi from Lesson 0's first [Homework](https://github.com/CodeYourFuture/wordpress-module/blob/carmemias-lesson1/lesson0.md#homework) exercise.
+> Exercise: Log into your local WordPress website and have a look at the various options in the **Settings menu**. If you haven't done so yet, do tasks __v__ and __vi__ from Lesson 0's first [Homework](https://github.com/CodeYourFuture/wordpress-module/blob/carmemias-lesson1/lesson0.md#homework) exercise.
 > Now have a look at the Settings > Permalinks section. What do you think it does?
 >
-> Exercise: Now go open the **Customizer**. If your theme allows it, add a video to the Home page header and change the background colour and title font.
-> Are the widgets here the same as the widgets we looked at earlier? How about the menus? Make changes to either of them here and see if they show in the other Widgets/Menu page.
+> Exercise: Now open the **Customizer**. If your theme allows it, add a video to the Home page header and change the background colour and title font.
+> Are the widgets here the same as the widgets in Dashboard > Appearance > Widgets? How about the menus? Make changes to either of them here and see if they show in the other Widgets/Menu page.
 >
 > Exercise: Look at the **Tools menu** > **Import** and **Export** options. In which situations do you think they would be useful?
 > Export the content of your exercise website onto a file. Swap files with the person sitting next to you. Import each other's content. Why do you think we are made to choose a user name? Would you always want to import the images? Why?
 
 ### Users and Roles
 
-Read what the **WordPress Codex** says about [User Roles](https://codex.wordpress.org/Roles_and_Capabilities)
+Read what the **WordPress Codex** says about [User Roles](https://codex.wordpress.org/Roles_and_Capabilities).
 
 > Exercise: Have a look at the [New Yorker](https://www.newyorker.com/)'s WordPress website. Which user roles do you think they use? Why?
 
@@ -88,16 +88,16 @@ To run a WordPress website, we need a web hosting package with PHP and one [MySQ
 
 **MySQL** is an Open Source **relational** database. In a relational database, data is grouped in tables according to what they represent. Each table has at least two columns, the first of which is always a unique id number. Each row represents a data entry.
 
-For example, in WordPress, there a table for posts (normally called `wp_posts`) with columns such as: ID, post_author, post_date, post_content, post_title, post_status, etc.
+In WordPress for example, there is a table for posts (normally called `wp_posts`) with columns such as: ID, post_author, post_date, post_content, post_title, post_status, etc.
 
 Example `wp_posts`:
 
 ID | post_author | post_date | post_content | post_title | post_status
 ---|-------------|-----------|--------------|------------|------------
 1 | 1 | 2017-06-07 10:05:32 | Welcome to WordPress. This is your... | Hello world! | publish
-2 | 1 | 2017-06-08 17:47:50 | Repository-hosted Themes are re... | My opinion on Themes | publish
+2 | 1 | 2017-06-08 17:47:50 | Repository-hosted Themes are re... | My opinion on Themes | draft
 
-And another table for users (normally called `wp_users`) with columns such as ID, user_login, user_email, user_pass (it's content is encrypted), display_name, etc.
+And another table for users (normally called `wp_users`) with columns such as ID, user_login, user_email, user_pass (encrypted), display_name, etc.
 
 Example `wp_users`:
 
@@ -113,7 +113,7 @@ According to the [PHP Manual](http://php.net/manual/en/intro-whatis.php):
 
 > PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
 
-The WordPress core is written in PHP and so are WordPress Themes and Plugins, at least partly. You can see how PHP interacts with HTML in the `twentyseventeen/page.php` Theme template:
+The WordPress core is written in PHP and so are the WordPress Themes and Plugins, at least partly. You can see how PHP interacts with HTML in the `twentyseventeen/page.php` Theme template:
 
 ```php
 <?php
@@ -211,7 +211,7 @@ Let's demonstrate this with an exercise:
 
 > Before the exercise: For the sake of demonstrating what happens when we make changes to a parent theme, we will swap our current version of the `twentyseventeen` theme for an older one.
 > 1. Download version 1.0 from its [github repository](https://github.com/WordPress/twentyseventeen)
-> 2. move it to your local site's `wp-content/themes` folder, overriding the existing folder with the same name.
+> 2. Move it to your local site's `wp-content/themes` folder, overriding the existing folder with the same name.
 > 3. Double check that `twentyseventeen` is the active Theme on your site.
 >
 > Exercise: We will now change the main header title's font to "Limelight", which you can find in [Google Fonts](https://fonts.google.com). These are the steps to follow:
@@ -224,7 +224,7 @@ Let's demonstrate this with an exercise:
 > 5. Now, notice the Dashboard notice telling you there is an update for your theme. Run the update so that your Theme now has the latest version.
 > 6. Have a look at the website again. What happened to the header font? Yes, that's right, because the Theme has been updated, **all our changes have been overriden and are now lost**.
 
-This is the reason why don't make changes directly to a Theme, but create a Child Theme instead. A Child Theme inherits everything from its parent theme and overrides what it wishes to change.
+This is the reason why we don't make changes directly to a Theme, but create a Child Theme instead. A Child Theme inherits everything from its parent theme and overrides what it wishes to change.
 
 Let's do it with our example exercise. First of all, follow these steps to create a Child Theme:
 1. Open your website's `wp-content/themes` folder and create a new folder. In this example we will call the folder `twentyseventeen-child` but you call it anything you like, just make sure there are no spaces or special characters in the name.
@@ -245,6 +245,7 @@ Let's do it with our example exercise. First of all, follow these steps to creat
 */
 ```
    We type the parent theme's folder name by the `Template` attribute and the Child Theme's folder name by `Text Domain`.
+
 3. Add a new file called `functions.php` to the child theme folder and paste the following text in it:
 ```PHP
 <?php
@@ -262,16 +263,18 @@ add_action( 'wp_enqueue_scripts', 'my_child_theme_enqueue_styles' );
 ```
    The code above first loads the parent theme's stylesheet, and then loads the Child Theme's stylesheet. Thus, the Child Theme's CSS rules override those of the parent theme when applied to the same element, class or id.
 
-4. Now that you have a Child Theme, go to your website's Dashboard > Appearance > Themes. Can you see it listed with the others? Hover the mouse over the Child Theme box and click the `Description` button. can you find the text you typed earlier?
+4. Now that you have a Child Theme, go to your website's Dashboard > Appearance > Themes. Can you see it listed with the others? Hover the mouse over the Child Theme box and click the `Description` button. Can you find the text you typed earlier?
 
-> Exercise: Now it's time to change the main header title's font to "Limelight" again. You should be able to work out how to do it by yourself.
+5. Activate the Child Theme and have a look at the website. What changes can you see?
+
+> Exercise: Now it's time to change the main header title's font to "Limelight" again, but this time from the Child Theme as it should be. Try to work out how to do it by yourself and only ask for help from the mentors if you haven't found the solution elsewhere.
 >
-> Exercise:  Have a look at Q3 at the bottom of the [Template Hierarchy](#the-template-hierarchy) section. We now want to make sure that our new Child Theme makes the `About` page look different from the other pages.
-> 1. Before you start, make sure you have a page called `About` ;-) and that it has a photo and a couple of paragraphs of text in it.
-> 2. We want the page title to be all caps and a nice bright colour. We also want the photo to float to the left and have a right padding of 1em. Do not make the styling changes inline! In which file should you make them instead?
+> Exercise:  Have a look at Q3 at the bottom of the [Template Hierarchy](#the-template-hierarchy) section. We now want to make sure that our new Child Theme has a super special `About` page.
+> 1. Before you start, make sure you have a page called `About`. Add a photo and a couple of paragraphs of text in its content.
+> 2. We want the page title to be all caps and a nice bright colour. We also want the photo to float to the left and have a right padding of 1em. We don't want any styling changes inline! In which file should you make them instead?
 > 3. Now we want to add a special section just below the page content. This section will have a pale yellow background, a padding of 3em and some centered text saying "Get in touch!". This text should link to your email. In which file should you make the changes?
 
-To find out more about the Child Themes or the WordPress functions used in the code above, please refer to the [WordPress Codex](https://codex.wordpress.org).
+We would encourage you to keep playing and make experiments with your new Child Theme. If there is something you don't know how to do, please refer to the [WordPress Codex](https://codex.wordpress.org).
 
 ## The WordPress Loop
 
