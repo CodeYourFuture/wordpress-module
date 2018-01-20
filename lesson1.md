@@ -18,20 +18,22 @@
 
 **Before we start, we would like to point out that, from now on, when we talk about WordPress we mean WordPress.org**.
 
-This section will be 100% hands on and we will learn the key WordPress terms and concepts by using them. To achieve this, we will work with the local WordPress installation from [Lesson0](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md)'s exercises.
+To log into your local WordPress install, type `localhost/wp-login.php` into the browser's address bar. Use the username and password you typed in during the 5-minute installation process.
 
-Concept | What is it? | When or where do we use it?
---------|-------------|----------------------------
-Page | |
-Post | |
-Category | |
-Tag | |
-Comment | |
-Widget | |
-Plugin | |
-Theme | |
+In this section we will learn the key WordPress terms and concepts by using them, in a 100% hands-on way, with the local WordPress installation from [Lesson0](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md)'s exercises.
 
-> Exercise: Using your own words, fill the gaps in the table above. Give examples if necessary.
+> Exercise: Using your own words, fill the gaps in the table below. Give examples if necessary.
+>
+> Key Concept | What is it? | When or where do we use it?
+> --------|-------------|----------------------------
+> Page | |
+> Post | |
+> Category | |
+> Tag | |
+> Comment | |
+> Widget | |
+> Plugin | |
+> Theme | |
 
 ### Media
 
