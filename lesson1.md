@@ -203,7 +203,73 @@ Now that you have the knowledge to modify theme files, you may be tempted to sta
 
 ## Child Themes
 
-Para
+A **Child Theme** is a theme that inherits layout, styling and functionality from another Theme, called the **parent theme**. You would create a Child Theme when you wish to make permanent changes to the parent theme's template files or stylesheet.
+
+Let's demonstrate this with an exercise:
+
+> Before the exercise: For the sake of demonstrating what happens when we make changes to a parent theme, we will swap our current version of the `twentyseventeen` theme for an older one.
+> 1. Download version 1.0 from its [github repository](https://github.com/WordPress/twentyseventeen)
+> 2. move it to your local site's `wp-content/themes` folder, overriding the existing folder with the same name.
+> 3. Double check that `twentyseventeen` is the active Theme on your site.
+>
+> Exercise: We will now change the main header title's font to "Limelight", which you can find in [Google Fonts](https://fonts.google.com). These are the steps to follow:
+> 1. Read the Google Fonts instructions on how to set the font to "Limelight". Notice that you will need to make changes in two different places.
+> 2. Use the browser's developer tools to find out the class and/or id of the title html element.
+> 2. Find out the css rule that sets the title's font family.
+> 3. Identify which theme files you will need to make the changes indicated in Google Fonts.  
+> 4. Make the changes directly in the theme files and open the page in the browser. The title should now show in the new font!
+>
+> 5. Now, notice the Dashboard notice telling you there is an update for your theme. Run the update so that your Theme now has the latest version.
+> 6. Have a look at the website again. What happened to the header font? Yes, that's right, because the Theme has been updated, **all our changes have been overriden and are now lost**.
+
+This is the reason why don't make changes directly to a Theme, but create a Child Theme instead. A Child Theme inherits everything from its parent theme and overrides what it wishes to change.
+
+Let's do it with our example exercise. First of all, follow these steps to create a Child Theme:
+1. Open your website's `wp-content/themes` folder and create a new folder. In this example we will call the folder `twentyseventeen-child` but you call it anything you like, just make sure there are no spaces or special characters in the name.
+2. Add a new file called `style.css` and paste the following text in it:
+```css
+/*
+ Theme Name:   My First Child Theme
+ Theme URI:    http://mywebsite.com/my-first-child-theme/
+ Description:  A Description for your Theme. This is the text that shows in Dashboard > Appearance > Themes
+ Author:       Your Name
+ Author URI:   http://mywebsite.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyseventeen-child
+*/
+```
+   We type the parent theme's folder name by the `Template` attribute and the Child Theme's folder name by `Text Domain`.
+3. Add a new file called `functions.php` to the child theme folder and paste the following text in it:
+```PHP
+<?php
+function my_child_theme_enqueue_styles() {
+
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array( 'parent-style' ),
+        wp_get_theme()->get('Version')
+    );
+}
+add_action( 'wp_enqueue_scripts', 'my_child_theme_enqueue_styles' );
+?>
+```
+   The code above first loads the parent theme's stylesheet, and then loads the Child Theme's stylesheet. Thus, the Child Theme's CSS rules override those of the parent theme when applied to the same element, class or id.
+
+4. Now that you have a Child Theme, go to your website's Dashboard > Appearance > Themes. Can you see it listed with the others? Hover the mouse over the Child Theme box and click the `Description` button. can you find the text you typed earlier?
+
+> Exercise: Now it's time to change the main header title's font to "Limelight" again. You should be able to work out how to do it by yourself.
+>
+> Exercise:  Have a look at Q3 at the bottom of the [Template Hierarchy](#the-template-hierarchy) section. We now want to make sure that our new Child Theme makes the `About` page look different from the other pages.
+> 1. Before you start, make sure you have a page called `About` ;-) and that it has a photo and a couple of paragraphs of text in it.
+> 2. We want the page title to be all caps and a nice bright colour. We also want the photo to float to the left and have a right padding of 1em. Do not make the styling changes inline! In which file should you make them instead?
+> 3. Now we want to add a special section just below the page content. This section will have a pale yellow background, a padding of 3em and some centered text saying "Get in touch!". This text should link to your email. In which file should you make the changes?
+
+To find out more about the Child Themes or the WordPress functions used in the code above, please refer to the [WordPress Codex](https://codex.wordpress.org).
 
 ## The WordPress Loop
 
