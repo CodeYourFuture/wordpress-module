@@ -280,7 +280,7 @@ Next, copy and paste the `docker-compose.yml` into the project folder. You then 
 ```yml
 volumes:
   - my_wp_site_wp_content:/var/www/html/wp-content
-  - .:/var/www/html/wp-content/plugins/my-awesome-wp-plugin/ # add this line
+  - .:/var/www/html/wp-content/themes/my-wordpress-site/ # add this line
 ```
 
 Can you guess what that line does? It maps the current directory on your local machine (represented by a ".") to a folder named "my-awesome-wp-plugin" inside of the Docker container. The "my-awesome-wp-plugin" folder will be located inside of the "/wp-content/plugins" folder, which is where WordPress looks for plugin files.
