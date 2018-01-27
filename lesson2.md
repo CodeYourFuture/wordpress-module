@@ -12,8 +12,9 @@
 * Working freelance ([Carme](https://carmemias.com/) & [Steven](https://www.stevenpark.co.uk/))
 * Working for an agency ([Human Made](https://humanmade.com/))
 * Building and selling themes ([📺 Muhammad Haris](https://www.youtube.com/watch?v=uQBL7pSAXR8))
-* Building and selling plugins ([WP Pusher](https://wppusher.com))
+* Building and selling plugins ([Peter / WP Pusher](https://wppusher.com))
   * Consider freemium model
+* Serving a niche ([Nate / Theme of the Crop](https://themeofthecrop.com/))
 * Building a service around WordPress ([Metorik](https://metorik.com/))
   * Use the REST API to talk to WordPress
 
