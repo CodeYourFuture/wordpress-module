@@ -26,4 +26,6 @@
 
 ## The REST API
 
-[https://github.com/petersuhm/wp-rest-api-example](https://github.com/petersuhm/wp-rest-api-example)
+* Discussion: What is an API?
+* [The REST API Handbook](https://developer.wordpress.org/rest-api/)
+* [Peter's example theme](https://github.com/petersuhm/wp-rest-api-example)
