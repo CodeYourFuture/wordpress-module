@@ -69,6 +69,7 @@ All media files uploaded onto the site can be viewed (and their settings edited)
 > Now have a look at the Settings > Permalinks section. What do you think it does?
 >
 > Exercise: Now open the **Customizer**. If your theme allows it, add a video to the Home page header and change the background colour and title font.
+> What else can you change?
 > Are the widgets here the same as the widgets in Dashboard > Appearance > Widgets? How about the menus? Make changes to either of them here and see if they show in the other Widgets/Menu page.
 >
 > Exercise: Look at the **Tools menu** > **Import** and **Export** options. In which situations do you think they would be useful?
@@ -81,3 +82,19 @@ Read what the **WordPress Codex** says about [User Roles](https://codex.wordpres
 > Exercise: Have a look at the [New Yorker](https://www.newyorker.com/)'s WordPress website. Which user roles do you think they use? Why?
 
 ## The Course Project
+
+From now on, we will use the exercises to build a website. We will continue using and improving this website throughout the rest of the module.
+
+### Project Description
+
+What will the website do and who is the website for? Some text here that will be added when we know which project we're doing.
+
+We will start with a very basic theme and improve it as we go along.
+
+> Exercise: Download the [Minimalist theme](https://github.com/carmemias/minimalist-theme), install and activate it in your local WordPress install.
+
+> Exercise: Create the pages (`Home`, `About Us`, `Contact Us` and `Blog`), 2 posts for the blog and a menu. Add useful widgets to the sidebar.
+
+> Exercise: Add a form to the `Contact Us` page. find several plugins to choose from and decide which one you should use. Be prepared to discuss your choice with the class. We want to hear what you looked for and all pros and cons of your choice.
+
+> Exercise: Which other plugins do you think we **should** have and why?
