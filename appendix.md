@@ -1,19 +1,8 @@
 # WordPress - Appendix
 
 **Further Reading**
-- [What do WordPress developers do?](#what-do-wordpress-developers-do)
 - [What is Open Source? GPL and MIT Licenses](#what-is-open-source-gpl-and-mit-licenses)
 ---
-
-## What do WordPress developers do?
-
-As an IT professional, there's several different ways of working with WordPress:
-
-*   You can build and maintain websites for clients using, and adapting, existing WordPress **Themes** ( = collection of templates for the frontend ) and **Plugins** ( = extensions to the default WordPress functionality ).
-*   You can create WordPress Themes for clients or to sell them on platforms such as the [Theme Directory](https://en-gb.wordpress.org/themes/) or the [ThemeForest](https://themeforest.net).
-*   You can create WordPress Plugins for clients or to sell on the [Plugin Directory](https://en-gb.wordpress.org/plugins/).
-
-Of course, you can also earn a living as a content editor, a blogger or a business owner with a WordPress website. But that topic is outside the scope of this course ;-) .
 
 ## What is Open Source? GPL and MIT Licenses
 

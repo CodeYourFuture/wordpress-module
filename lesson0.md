@@ -1,6 +1,6 @@
 # WordPress — Pre-class introduction
 
-The WordPress module is four weeks of classes designed to get you up and running with WordPress and learn it's various features so that you can work with your fellow students to build a WordPress site. You will use use your existing HTML, CSS and JavaScript knowledge to create a WordPress theme and plugin and we will explore the WordPress Rest API to write a small React web app. 
+The WordPress module is four weeks of classes designed to get you up and running with WordPress and learn it's various features so that you can work with your fellow students to build a WordPress site. You will use use your existing HTML, CSS and JavaScript knowledge to create a WordPress theme and plugin and we will explore the WordPress REST API to write a small React web app. 
 
 In preperation for the first class please read the following and try and complete the exercises. If you have any problems please post a message on Slack.
 
@@ -15,7 +15,7 @@ In preperation for the first class please read the following and try and complet
 
 ## What is WordPress?
 
-WordPress is an Open Source Content Management System (CMS), released in 2003 by Matt Mullenweg and Mike Little. It was released in 2003 by Matt Mullenweg and Mike Little. As of 2017, it has 59% of the CMS marketshare and 28% of all websites, worldwide. It is:
+WordPress is an Open Source Content Management System (CMS), released in 2003 by Matt Mullenweg and Mike Little. It was released in 2003 by Matt Mullenweg and Mike Little. As of 2018, it has 60% of the CMS marketshare and 31% of all websites, worldwide ([source](https://kinsta.com/wordpress-market-share/)). It is:
 
 * The most popular CMS, by far
 * Free to use and modify
@@ -42,7 +42,7 @@ _A screengrab of the wordpress.com dashboard._
 ![screengrab of the wordpress.org dashboard](assets/lesson0/wp.org-dashboard.png)
 _A screengrab of the wordpress.org dashboard._
 
-> **Exercise:** Create a blog with WordPress.com and become familiar with the key WordPress concepts. If you get stuck with any of the steps, dont worry, check the [WordPress.com support site](https://en.support.wordpress.com/) or post a question on Slack.
+> **Exercise:** Create a blog with WordPress.com and become familiar with the key WordPress concepts. If you get stuck with any of the steps, don't worry, check the [WordPress.com support site](https://en.support.wordpress.com/) or post a question on Slack.
 > 1.  Create a free account on [wordpress.com](https://wordpress.com/) and choose a name for the blog.
 > 2.  Choose a Theme.
 > 3.  Have a look around and try add some content — a Page, some news-style Posts. Try upload image(s) and add to your pages/posts.
