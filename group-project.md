@@ -61,6 +61,7 @@ You are required to:
 - Brand guidelines — Logo and colours [T.B.C.]
 - [Layout](./project-assets/layout.png) — A rough layout for you to follow
 - [Site Content](./project-assets/site-content.md) — content required for each page
+- [Site Content](./project-assets/site-content/) — content required for each page
 - [Images](./project-assets/images/) — images for you to use
 
 ### Getting Started
