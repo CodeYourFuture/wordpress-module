@@ -83,11 +83,13 @@ Read what the **WordPress Codex** says about [User Roles](https://codex.wordpres
 
 ## The Course Project
 
-From now on, we will use the exercises to build a website. We will continue using and improving this website throughout the rest of the module.
+We will use the exercises to build a website. Throughout the rest of the module, we will use and improve this website
 
 ### Project Description
 
-What will the website do and who is the website for? Some text here that will be added when we know which project we're doing.
+**What will the website do and who is the website for?**
+
+(Refer to Steven's document or paste the project description here?)
 
 We will start with a very basic theme and improve it as we go along.
 
