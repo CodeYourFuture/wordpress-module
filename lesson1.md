@@ -12,6 +12,7 @@
 **Before we begin...**
 
 * You should have finished a pre-class lesson that showed you how to set up a local installation of WordPress on your machine. Let the mentors if there have been any problems completing this.
+
 * WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, although the syntax is a little different, you will be able to use what you have learned so far in JavaScript (such as variables, functions, arrays, conditional statements and so on) to help you. See [Lesson 2](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson2.md) for a short overview of PHP.
 
 ## Basic Concepts
@@ -94,6 +95,8 @@ We will use the exercises to build a website. Throughout the rest of the module,
 We will start with a very basic theme and improve it as we go along.
 
 > Exercise: Download the [Minimalist theme](https://github.com/carmemias/minimalist-theme), install and activate it in your local WordPress install.
+
+> Exercise: If the WordPress core version is less than 5.0.0., install the Gutenberg plugin.
 
 > Exercise: Create the pages (`Home`, `About Us`, `Contact Us` and `Blog`), 2 posts for the blog and a menu. Add useful widgets to the sidebar.
 
