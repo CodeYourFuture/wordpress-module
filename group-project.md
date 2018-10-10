@@ -15,7 +15,7 @@ For the CYF WordPress module we want you to create a working website using WordP
 
 For this project we will imagine that you are working with a client called [insert name]. They have chosen you to help them build a website, congratulations! They have outlined the following:
 
-> "We are a business that provides [insert product] across Scotland. We require a new website to allow our clients to discover who we are, contact us if they need help and to use a tool to browse our product database. We want to be able to manage and edit content on the site, including adding to and editing our products database. We are looking for a simple design that follows our existing brand.
+> "We are the Glasgow Bike Store, a social enterprise that provides bike products and repair services. We require a new website to allow our clients to discover who we are, contact us if they need help and to use a tool to browse our product database. We want to be able to manage and edit content on the site, including adding to and editing our products database. We are looking for a simple design that follows our existing brand.
 
 ### The Project Requirements
 
@@ -58,7 +58,7 @@ You are required to:
 
 * The client has provided you with the following assets:
 
-- Brand guidelines — Logo and colours [T.B.C.]
+- [Brand guidelines](./project-assets/brand-guidelines.md) — Logo and colours
 - [Layout](./project-assets/layout.png) — A rough layout for you to follow
 - [Site Content](./project-assets/site-content.md) — content required for each page
 - [Images](./project-assets/images/) — images for you to use
