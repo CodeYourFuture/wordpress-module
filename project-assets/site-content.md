@@ -5,23 +5,23 @@
 
 ---
 
-# Welcome to [company name]
+# Welcome to the Glasgow Bike Store
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We are a freindly and knowledgable bike and repair shop based in Glasgow. We offer a range of quality bike products and accessories at reasonable prices.
 
 Large image: [image01.jpg](./images/image01.jpg)
 
 ## Testimonials
 
-> "[company name] is the most valuable business resource we have EVER purchased."
+> "Glasgow Bike Store are the most friendly and helpful bike specialists I have ever used. I love my new bike!"
 
 Angela Fisher, Edinburgh
 
-> "We were treated like royalty. [company name] is worth much more than I paid. Nice work on your [company name]. I would also like to say thank you to all your staff."
+> "We were treated so well. My new bike is worth much more than I paid. I would also like to say thank you to all your staff."
 
 Janice Simpson, Glasgow
 
-> "I am really satisfied with my [company name]."
+> "Great prices and service. I am really satisfied with Glasgow Bike Store."
 
 Joe Smith, Aberdeen
 
@@ -32,7 +32,7 @@ Joe Smith, Aberdeen
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We are a freindly and knowledgable bike and repair shop based in Glasgow. We offer a range of quality bike products and accessories at reasonable prices. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Image: [image02.jpg](./images/image02.jpg)
 
@@ -51,16 +51,17 @@ Image: [image04.jpg](./images/image04.jpg)
 
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Please browse our range of products and services below.
 
-| Product Name  | Colour        | Price  | DELETE  |
-| ------------- | ------------- | ------ | :-----: |
-| Example 01    | Red           | £10.00 | x       |
-| Example 02    | Green         | £12.00 | x       |
-| Example 03    | Blue          | £18.00 | x       |
-| Example 04    | Yellow        | £22.00 | x       |
-| Example 05    | Orange        | £29.00 | x       |
-| Example 06    | Purple        | £36.00 | x       |
+| Product Name      | Colour        | Price   | SKU Code  | DELETE  |
+| ----------------- | ------------- | ------- | --------- | :-----: |
+| 3TX Mountain Bike | Black         | £300.00 | 113-3TX   | x       |
+| GW Mountain Bike  | Black, Green  | £412.00 | 445-GW    | x       |
+| NU City Bike      | White, Green  | £318.00 | 827-NU    | x       |
+| Kiddo City Bike   | Blue          | £218.00 | 877-KID   | x       |
+| New Tyre 18"      | Black         | £ 22.00 | 344-18    | x       |
+| New Tyre 20"      | Black         | £ 29.00 | 344-20    | x       |
+| New Tyre 22"      | Black         | £ 36.00 | 344-22    | x       |
 
 
 ### Admin section (only for logged in users)
@@ -73,6 +74,8 @@ Product Name:   ________________
 Product Colour: ________________
 
 Product Price:  ________________
+
+Product SKU:    ________________
 
 Product:        ________________________________
 Description:   |                                |
@@ -90,7 +93,7 @@ Description:   |                                |
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Please use the form below to contact us.
 
 ## Contact Us
 
