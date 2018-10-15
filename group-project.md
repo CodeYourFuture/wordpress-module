@@ -31,7 +31,7 @@ You are required to:
       * Text and accompanying images
   3. 'Products' page, featuring:
       * Create a custom post type and a plugin to display a products database
-        * [Peter to supply details about plugin]
+        * [T.B.C.]
       * Output all company products in a table, with appropriate headings — data should be fetched via the WordPress REST API
       * Administrators (i.e. logged in users) should be able to add new products to the database  from the Products page (via the WordPress REST API)
   4. 'Contact' page, featuring:
