@@ -13,13 +13,13 @@
 
 * You should have finished a pre-class lesson that showed you how to set up a local installation of WordPress on your machine. Let the mentors if there have been any problems completing this.
 
-* WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, although the syntax is a little different, you will be able to use what you have learned so far in JavaScript (such as variables, functions, arrays, conditional statements and so on) to help you. See [Lesson 2](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson2.md) for a short overview of PHP.
+* WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, although the syntax is a little different, you will be able to use what you have learned so far in JavaScript (such as variables, functions, arrays, conditional statements and so on) to help you. 
 
 ## Basic Concepts
 
 **Before we start, we would like to point out that, from now on, when we talk about WordPress we mean WordPress.org**.
 
-To log into your local WordPress install, type `localhost/wp-login.php` in the browser's address bar. Use the username and password you typed in during the 5-minute installation process.
+To log into your local WordPress install. Use the username and password you typed in during the 5-minute installation process.
 
 In this section we will learn the key WordPress terms and concepts by using them, in a 100% hands-on way, with the local WordPress installation from [Lesson0](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md)'s exercises.
 
@@ -66,7 +66,7 @@ All media files uploaded onto the site can be viewed (and their settings edited)
 
 ### Settings, Customizer, and Tools
 
-> Exercise: Log into your local WordPress website and have a look at the various options in the **Settings menu**. If you haven't done so yet, do tasks __v__ and __vi__ from Lesson 0's first [Homework](https://github.com/CodeYourFuture/wordpress-module/blob/carmemias-lesson1/lesson0.md#homework) exercise.
+> Exercise: Log into your local WordPress website and have a look at the various options in the **Settings menu**. 
 > Now have a look at the Settings > Permalinks section. What do you think it does?
 >
 > Exercise: Now open the **Customizer**. If your theme allows it, add a video to the Home page header and change the background colour and title font.
@@ -84,21 +84,15 @@ Read what the **WordPress Codex** says about [User Roles](https://codex.wordpres
 
 ## The Course Project
 
-We will use the exercises to build a website. Throughout the rest of the module, we will use and improve this website
+Throughout this WordPress module, we will use the exercises to build a website. We will start with a very basic theme and improve it as we go along.
 
-### Project Description
-
-**What will the website do and who is the website for?**
-
-(Refer to Steven's document or paste the project description here?)
-
-We will start with a very basic theme and improve it as we go along.
+To start with, please read the [project description](https://github.com/CodeYourFuture/wordpress-module/blob/revision-2018/group-project.md) and then come back here to do the exercises:
 
 > Exercise: Download the [Minimalist theme](https://github.com/carmemias/minimalist-theme), install and activate it in your local WordPress install.
 
 > Exercise: If the WordPress core version is less than 5.0.0., install the Gutenberg plugin.
 
-> Exercise: Create the pages (`Home`, `About Us`, `Contact Us` and `Blog`), 2 posts for the blog and a menu. Add useful widgets to the sidebar.
+> Exercise: Create the pages (`Home`, `About Us`, `Contact Us` and also a `Blog` page), 2 posts for the blog and a menu. Add useful widgets to the sidebar.
 
 > Exercise: Add a form to the `Contact Us` page. find several plugins to choose from and decide which one you should use. Be prepared to discuss your choice with the class. We want to hear what you looked for and all pros and cons of your choice.
 
