@@ -65,7 +65,7 @@ You are required to:
 
 ### Getting Started
 
-* Install a new instance of WordPress on you machine, with no pages or other content
+* Install a new instance of WordPress on your machine, with no pages or other content
 * Install a copy of the starter theme [details/location needed]
 * Make sure you know where theme files are stored in the WordPress installation folder structure — you will need to edit these files
 * Read the Project Requirements again. Is there anything you don't understand?
@@ -80,10 +80,10 @@ You are required to:
 
 * Include complete [theme stylesheet header metadata](https://codex.wordpress.org/Theme_Development#Theme_Stylesheet).
   * Do you know what all these items mean? What is the 'License', the 'Text Domain' and so on?
-* Try sharing you theme with a fellow student and ask them if they can install it via the WordPress admin.
+* Try sharing your theme with a fellow student and ask them if they can install it via the WordPress admin.
   * Does it install okay? You will need to make sure you [provide a `.zip` file](https://www.competethemes.com/blog/manually-install-wordpress-theme/) to your fellow student.
-* Make the site available for the client to by uploading to a hosting service
-  * Set the client up with their own login account so that they can edit content and provide some basic documentation so that they know where and how to login. _(Pretend a mentor is the client and send them details via Slack)_
+* Make the site available for the client by uploading to a hosting service
+  * Set the client up with their own login account so that they can edit content. Provide some basic documentation so that they know where and how to login. _(Pretend a mentor is the client and send them details via Slack)_
 * Imagine you are charging the client for the work you are doing
   * How do you work out how much to charge the client?
   * Estimate how long the project will take (in days) and compare this to how long it actually took — how accurate where you?
