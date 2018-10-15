@@ -58,7 +58,14 @@ In order to run a basic WordPress installation, we need a few things:
 - The actual WordPress source code
 - A SQL database for WordPress to store our content
 
-[Local environment setup tutorial here]
+If you are using Windows or OSX we are going to use a local development tool called [Flywheel](https://getflywheel.com/), a tool that makes setting up a local WordPress install really easy.
+
+1. Watch this short introductory video: [WordPress Development with Local by Flywheel Part 1: Getting Started](https://www.youtube.com/watch?time_continue=5&v=reOE5btJ4L0)
+2. [Download and install Flywheel](https://local.getflywheel.com/) (click the 'Free Download' button). It's quite big at around 500MB, so it may take a while.
+3. Watch this video and follow the installation instructions: [WordPress Development with Local by Flywheel Part 2: Installing a Local WordPress Site](https://www.youtube.com/watch?v=No8AGfNvUII)
+
+> Make a note of the 'Local site path' location, this is where WordPress is installed and you will be editing some of these files later.
+> Make a note of your username and password, you will use these to login to your WordPress installation.
 
 ---
 
