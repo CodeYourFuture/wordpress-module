@@ -1,6 +1,6 @@
 # WordPress — Pre-class introduction
 
-The WordPress module is four weeks of classes designed to get you up and running with WordPress and learn it's various features so that you can work with your fellow students to build a WordPress site. You will use use your existing HTML, CSS and JavaScript knowledge to create a WordPress theme and plugin and we will explore the WordPress REST API to write a small React web app. 
+The WordPress module is four weeks of classes designed to get you up and running with WordPress and learn its various features so that you can work with your fellow students to build a WordPress site. You will use use your existing HTML, CSS and JavaScript knowledge to create a WordPress theme and plugin and we will explore the WordPress REST API to write a small React web app. 
 
 In preperation for the first class please read the following and try and complete the exercises. If you have any problems please post a message on Slack.
 
