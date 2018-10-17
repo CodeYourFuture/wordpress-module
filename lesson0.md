@@ -67,6 +67,49 @@ If you are using Windows or OSX we are going to use a local development tool cal
 > Make a note of the 'Local site path' location, this is where WordPress is installed and you will be editing some of these files later.
 > Make a note of your username and password, you will use these to login to your WordPress installation.
 
+### On Ubuntu
+_NB. If you are using Windows or OSX please skip this._
+
+If you are using Ubuntu there aren't many out-of-the-box development environments for WordPress. This means that getting up and running requires a few extra manual steps.
+
+#### 3. Create a MySQL database
+Installing a MySQL server on Ubuntu requires a little bit of extra work, which is why we recommend that you instead sign up for a free MySQL database on https://db4free.net/. The service is free but the database you get is very slow. If you like tinkering around and want a faster database feel free to [try installing MySQL on your own machine](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04) - ask for help if you get stuck.
+
+#### 2. Install PHP
+Installing PHP on Ubuntu can be done using the `apt-get` tool. Fire up the Terminal app and type in:
+```bash
+sudo apt-get install php-cli php-mysql
+```
+
+This will install PHP and the PHP / MySQL driver.
+
+#### 3. Install WordPress
+In order to install WordPress you need the WordPress PHP files. You can download them directly from the Terminal with this command:
+
+```bash
+wget http://wordpress.org/latest.tar.gz
+```
+
+Once WordPress has been downloaded, you can unzip the files with the following command:
+
+```bash
+tar -xzvf latest.tar.gz
+```
+
+This will create a folder named "wordpress" on your machine. Feel free to rename this folder to the name of your website.
+
+#### 4. Run WordPress
+In order to run your WordPress website with PHP, you can use the built-in PHP server. Navigate in to your WordPress folder (from step 3) and run the following command in Terminal:
+
+```bash
+cd [FOLDER NAME HERE]
+php -S localhost:8080
+```
+
+This will start the PHP server on port 8080. You can now navigate to http://localhost:8080 to access your WordPress site.
+
+During the installation wizard you are asked to provide the database settings from DB4Free (step 1). Use whatever you selected back in step 1 and use `db4free.net` for the "host". After completing the installation wizard, you WordPress site is ready to go.
+
 ---
 
 ## Homework
