@@ -117,7 +117,7 @@ During the installation wizard you are asked to provide the database settings fr
 1. Follow the 'Set up your WordPress development environment' tutorial above and make sure you have a local WordPress development environment ready for class.
 2. Login to the admin interface of your WordPress install and look around. Try replicating some of the steps you completed above for your WordPress.com account in your local install — do you notice many differences with the WordPress.com admin interface?
 3. Explore and install a plugin — find the plugins section (under Plugins > Add New). Search for a 'contact form' plugin (use the Search field in the top right).
-> **Don’t just install the first one in the search results** - read reviews, look at screenshots, read the installation instructions and consider what one to choose.
+> **Don’t just install the first one in the search results** - read reviews, look at screenshots, read the installation instructions and consider which one to choose.
 
 ---
 
