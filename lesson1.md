@@ -11,7 +11,7 @@
 
 **Before we begin...**
 
-* You should have finished a pre-class lesson that showed you how to set up a local installation of WordPress on your machine. Let the mentors if there have been any problems completing this.
+* You should have finished [a pre-class lesson](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson0.md) that showed you how to set up a local installation of WordPress on your machine. Let the mentors know if there have been any problems completing this.
 
 * WordPress uses the PHP programming language. This module is not designed to teach you PHP. However, although the syntax is a little different, you will be able to use what you have learned so far in JavaScript (such as variables, functions, arrays, conditional statements and so on) to help you. 
 
