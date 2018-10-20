@@ -2,7 +2,7 @@
 
 The objective of this WordPress Module has been to give you practical tools to start working on WordPress projects and show you how to use, with WordPress, what you learned in the main CodeYourFuture course.
 
-The WordPress world, however, is vast and there is a lot more to it than what we could tell you about in a 4-day module.
+The WordPress world, however, is vast and there is a lot more to it than what we could tell you about in a 4-day module. In this last lesson, we will give you an overview of what else you could be doing with WordPress and where to go to find out more.
 
 **What we will learn today?**
 
