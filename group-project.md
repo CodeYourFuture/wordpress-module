@@ -9,11 +9,11 @@ For the CYF WordPress module we want you to create a working website using WordP
 * Learn the advantages of using a CMS like WordPress
 * Follow a project brief, ensuring you meet the requirements given to you
 * Show creativity in coming up with solutions to problems and demonstrate design flair
-* Use collaboration, communication and project management skills.
+* Use collaboration, communication and project management skills
 
 ## The Project Brief
 
-For this project we will imagine that you are working with a client called [insert name]. They have chosen you to help them build a website, congratulations! They have outlined the following:
+For this project we will imagine that you are working with a client called Glasgow Bike Store. They have chosen you to help them build a website, congratulations! They have outlined the following:
 
 > "We are the Glasgow Bike Store, a social enterprise that provides bike products and repair services. We require a new website to allow our clients to discover who we are, contact us if they need help and to use a tool to browse our product database. We want to be able to manage and edit content on the site, including adding to and editing our products database. We are looking for a simple design that follows our existing brand.
 
@@ -30,10 +30,9 @@ You are required to:
   2. 'About' page, featuring:
       * Text and accompanying images
   3. 'Products' page, featuring:
-      * Create a custom post type and a plugin to display a products database
-        * [T.B.C.]
-      * Output all company products in a table, with appropriate headings — data should be fetched via the WordPress REST API
-      * Administrators (i.e. logged in users) should be able to add new products to the database  from the Products page (via the WordPress REST API)
+        * A table displaying all company products, with appropriate headings for 'Product Name', 'Colour', 'Price' and 'SKU Code'
+        * A form for Administrators (i.e. logged in users) only, that allows new products to be added to the database. It should have text input fields for 'Product Name', 'Colour', 'Price' and 'SKU Code' as well as a textarea input field for 'Description'
+        * The table and form data display and functionality should be managed by a custom WordPress plugin (see below for details)
   4. 'Contact' page, featuring:
       * Company address and telephone number
       * A contact form (via a third-party plugin of your choice)
@@ -47,10 +46,19 @@ You are required to:
     * A contact telephone number
     * A link to the company Twitter and Facebook accounts. These links should open in a new window
 
+### Custom Plugin
+
+To manage and display products a custom WordPress plugin is required. This plugin should:
+
+* Create a 'Product' custom post type
+  * The custom post type should have text fields for: 'Product Name', 'Colour', 'Price' and 'SKU Code' as well as a textarea field for 'Description'
+* Create a custom WordPress shortcode that outputs the products on a page in a table. Preferably, data should be fetched via the WordPress REST API
+* Create a custom WordPress shortcode that outputs a form that allows logged on users to add new products to the database, preferably via the WordPress REST API
+
 ### Design Guidelines
 
 * The client has provided a rough layout (see project assests below) that you should follow
-* The text and images can be laid out however you like. Text and images are provided but you can add your own if prefer.
+* The text and images can be laid out however you like. Text and images are provided but you can add your own if prefer
 * Colours should follow the company brand guidelines (see project assests below)
 * The theme should be responsive so that it works across smaller screens (e.g. mobiles) as well as larger screens
 
@@ -65,18 +73,22 @@ You are required to:
 
 ### Getting Started
 
-* Install a new instance of WordPress on your machine, with no pages or other content
-* Install a copy of the starter theme [details/location needed]
-* Make sure you know where theme files are stored in the WordPress installation folder structure — you will need to edit these files
+* Install a new instance of WordPress on you machine, or use an existing installation and delete all content 
+* Download the [Minimalist theme](https://github.com/carmemias/minimalist-theme), install and activate it in your local WordPress install
+* Make sure you know where theme and plugin folders are stored in the WordPress installation structure — you will need to edit these files
 * Read the Project Requirements again. Is there anything you don't understand?
 * Split up tasks amongst your group. Here are some ideas for responsibilities:
   * Project Manager — understands the brief, ensures everyone knows what they are to do, communicates with the team and the client regularly
   * Front End Developer(s) — Makes sure the theme matches the required look and feel, applies brand styling and outputs the product database via the API
   * Back End Developer(s) — Creates and/or sources plugins to meet requirements, creates the product database and provides the API
-  * Tester(s) — makes sure the website works, meets the requirements and has no bugs, provides feedback to developers 
+  * Tester(s) — makes sure the website works, meets the requirements and has no bugs, provides feedback to developers
+* Plan together what you are going to do during the week, set up a Slack channel for the project and arrange a time to discuss and/or meet together
+* Use GIT to work collaboratively on your theme and plugin code. Create branches for each feature you build and create pull requests to merge in finished code. Review each others code before approving pull requests
 * If you are stuck post a question on the `#scotland-wp` channel in Slack
 
 ### Stretch Goals
+
+You will get bonus points if you can also complete the following:
 
 * Include complete [theme stylesheet header metadata](https://codex.wordpress.org/Theme_Development#Theme_Stylesheet).
   * Do you know what all these items mean? What is the 'License', the 'Text Domain' and so on?
@@ -91,4 +103,7 @@ You are required to:
 
 ## Further Reading
 
-* []()
+* [Creating A WordPress Plugin Is Easier Than You Think](https://www.wpbeaverbuilder.com/creating-wordpress-plugin-easier-think/)
+* [How to Create Custom Post Types In WordPress](https://www.hostinger.co.uk/tutorials/wordpress-custom-post-types)
+* [Quick And Easy WordPress Shortcode Tutorial](https://www.webascender.com/blog/quick-easy-wordpress-shortcode-tutorial/)
+* [A Quick Start Guide To The WordPress REST API](https://www.wpsuperstars.net/wordpress-rest-api/)
