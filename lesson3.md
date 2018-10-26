@@ -53,3 +53,13 @@ Here is an example on how we can provide an anonymous function to an action:
 ```
 _A very simple WordPress plugin that uses the `wp_head` action to inject JavaScript code into the `<head></head>` part of the WordPress site._
 
+#### Exercise
+_Add an alert, like in the example above, to your WordPress plugin. What happens if you de-activate your plugin?_
+
+## Custom post types
+
+Lorem ipsum.
+
+## Shortcodes
+
+Lorem ipsum.
