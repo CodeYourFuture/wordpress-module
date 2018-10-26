@@ -1,12 +1,5 @@
 # Lesson 3 - Plugin development
 
-* What is a WordPress plugin
-  * The most basic plugin
-  * Plugin handbook and reference
-* Custom post types
-* Shortcodes
-
-
 ## What is a WordPress plugin?
 Plugins are a great way to add extra functionality to our WordPress sites. There are thousands of WordPress plugins avaialble in the [plugin directory](https://wordpress.org/plugins/), but sometimes you need something that is very specific to your exact use case that you need to write a plugin yourself.
 
