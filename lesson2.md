@@ -18,30 +18,32 @@
 
 Let the mentors if there are any problems with the above.
 
+---
+
 ## Editing WordPress Themes
 
-With WordPress you can get a website up and running very quickly thanks to the thousands of available themes. Themes are what tell WordPress where to get your data (Posts, Pages etc) and how to output and style it on your site. However, for our group project we are going to (mostly) write our own theme! We will start with a very basic 'skeleton' theme...
+With WordPress you can get a website up and running very quickly thanks to the thousands of available themes. Themes are what tell WordPress where to get your data (Posts, Pages etc) and how to output it on your site. However, for our group project we are going to start with a very basic 'skeleton' theme and modify it ourselves to suit our exact needs...
 
 > 1. Fork the following Git repo: https://github.com/carmemias/minimalist-theme
 > 2. Find the WordPress themes folders are on your computer and `$ git clone` the above repo into it
 > 3. Open that folder in a code editor such as Visual Studio Code
 > 4. Log in to your WordPress admin and activate the theme from under 'Appearance' > Themes
-> 5. View your site
+> 5. View your site. You should see your site laid out with minimal styling.
 
-Have a look at the project brief assets provided by the client...
+ Next have a look at the project brief assets provided by the client...
 
 > The [Brand Guidelines](/project-assets/brand-guidelines/), the [Layout Design](/project-assets/layout.png) and the [Site Content](/project-assets/site-content/)
 
 ...and let's start making some changes to our theme as per our client's requirements.
 
-### Changing Styles
+### Editing Styles
 
 We have some brand colours we need to incorporate. Open up `style.css` from the root of the theme folder - this is where all the CSS for the site is contained (some themes may have multiple CSS files). You will see we have some styles in place already. Let's add some brand colours..!
 
 > 1. Scroll to the bottom of the `style.css` file and add a CSS comment of `/* New styles */`, then add some new styles underneath...
 > 2. Change the text colour of the site to the brand guideline colour of `#5d5d5d` (grey)
 > 3. Change all headings (`h1, h2, h3, h4, h5, h6`) to the brand guideline colour of `#fe951c` (orange)
-> 4. Change all links to the brand guideline colour of `#067add` (blue) and a hover/focus colourof `#fe951c` (orange)
+> 4. Change all links to the brand guideline colour of `#067add` (blue) and a hover/focus colour of `#fe951c` (orange)
 > 5. Change the footer background to the brand guideline colour of `#5d5d5d` (grey)
 
 Save the file, refresh the site homepage in your browser and you should see your changes. The client is going to be pleased!
@@ -52,34 +54,34 @@ Save the file, refresh the site homepage in your browser and you should see your
 
 We've got some nice branding in place but the client also needs us to add a logo to the header and footer. But how and where does the theme output your websites content?
 
-If you look again at our theme folder and open up the `index.php` file. You will see a mix of code in here, some familiar HTML code and also some other code you may not recognise - this is called PHP and is the main programming language WordPress uses. All code between the <?php ... ?> tags is PHP, the rest is HTML.
+If you look again at our theme folder and open up the `index.php` file. You will see a mix of code in here, some familiar HTML code and also some other code you may not recognise - this is called PHP and is the main programming language WordPress uses. All code between the `<?php` and `?>` tags is PHP, the rest is HTML.
 
 *This module is not designed to teach you PHP. However, although the syntax is a little different, you will be able to use what you have learned so far in JavaScript (such as variables, functions, arrays, conditional statements and so on) to help you.*
 
 > Exercise: Have a look at the some `.php` files in the theme folder. Try to guess what the various parts do.
 
-Near the top of the `index.php` file you will see a call to `get_header();`. This is one of the many functions built in to WordPress to help you get content on to your website. This particular one looks for file in your theme folder called `header.php` and loads it. Likewise, there is a `get_footer()` that loads the footer.php theme file. As you'd expect, this is where our site's header and footer content is generated! Let's add our logo to both as required by the client's Layout Design...
+Near the top of the `index.php` file you will see a call to `get_header();`. This is one of the many functions built in to WordPress to help you get content on to your website. This particular one looks for file in your theme folder called `header.php` and loads it. Likewise, there is a `get_footer()` that loads, you guessed it, the footer.php theme file. And as you'd expect, this is where our site's header and footer content is generated. Let's add our logo to both as required by the client's Layout Design...
 
 > 1. Download the clients [logo](project-assets/images/logo-text.png) and save it in your theme folder
 > 2. Open `header.php` and find the `<div class="site-branding">` element. 
 > 3. Just after this element add an `<img>` tag with a `src` attribute with a value of `"logo-text.png"` and an `alt` attribute with a value of `"Glasgow Bike Store logo"`
 
-Save the file, refresh the site homepage in your browser and... hmmm, somethings not worked? The reason is the `src` attribute is not quite pointing to the image file in our theme folder. We need to use a bit of PHP in there so it can point to our theme folder. So, try this as our `src` value:
+Save the file, refresh the site homepage in your browser and... hmmm, something's not worked? The reason is the `src` attribute is not quite pointing to the image file in our theme folder. We need to use a bit of PHP in there so it can point to our theme folder. So, try this out:
 
 > `<img src="<?php echo get_stylesheet_directory_uri(); ?>/logo-text.png" alt="Glasgow Bike Store logo" />`
 
-You can see that you can mix PHP code with HTML. Save the file, refresh the site homepage in your browser and. it should work. (Make sure you have a copy of the image in the theme folder). It doesn't look great yet however. Try the following...
+Notice the `src` value - you can see that you can mix PHP code with HTML. Save the file, refresh the site homepage in your browser and. it should work. (If not, make sure you have a copy of the image in the theme folder). It doesn't look great yet however. Let's try the following...
 
 > 1. Make the image smaller. [HINT: You will need to go back to your `style.css` file and find a way of targeting the image]
 > 2. Align the text center and give it some margin
 > 3. In your themes folder it's a good idea to keep all your images organised in one folder. Put the `logo-text.png` file in a folder called `img`. You will need to update your `src` attribute to include the folder in the path
 > 4. BONUS: Can you make the link to the homepage in the header be the logo image instead of text?
 
-Now try and repeat the above exercise with the footer to add the company logo. This time use the alternative [logo](project-assets/images/logo.png).
+Now try and repeat the above exercise with the footer - this time use the alternative [logo](project-assets/images/logo.png).
 
 ## The Template Hierarchy
 
-Whether you are building your own theme, or modifying someone else’s with a child theme (explained later), you will have to understand the WordPress Template Hierarchy. This is the name given to the way WordPress chooses what template file in the current theme to use for each URI (or path) your user visits on your site — what one to use on the home page, the about page, search results page, 404 page and so on.
+Whether you are building your own theme, or modifying someone else’s, you will have to understand the WordPress Template Hierarchy. This is the name given to the way WordPress chooses what template file in the current theme to use for each URI (or path) your user visits on your site — what one to use on the home page, the about page, search results page, 404 page and so on.
 
   > Do you remember when working with node.js you had to deal with routing in your code? WordPress is slightly different — it maps the URI to a template file(s) in your theme based on the rules of the Template Hierarchy.
 
@@ -95,7 +97,7 @@ This shows you all the different possible template files you could have in your 
 
 So, think of every template file you add after `‘index.php’` as simply allowing you to be more specific about what content outputs to a specific page. Let’s take a look at an example…
 
-You should have the WordPress theme called ‘twentyseventeen’ installed and selected — if not, select it now in your WordPress admin under 'Themes'. Then, find the theme files in your local WordPress installation under `/wp-content/themes/twentyseventeen`. As well as the shared template files such as `‘header.php’, ‘footer.php’, ‘functions.php’` and so on there are the following files:
+In the themes folder you should have another theme called ‘twentyseventeen’. In here, as well as the shared template files such as `‘header.php’, ‘footer.php’, ‘functions.php’` and so on there are lots of other files that our Minimalist theme doesn't have, including:
 
 * `‘index.php’` — the default layout template file
 * `‘front-page.php’` — the template file used for your homepage
@@ -117,7 +119,9 @@ So, now a quick quiz… (Use the Template Hierarchy image above to help you, the
 * Q2. We want to change what outputs on all pages. What template file from above will we need to alter?
 * Q3. We want all pages to be the same apart from an About page that we have created. What do we need to do to have a template file specific to the this page only? (Note: the page URL will be ‘http:///mysite.com/about’)
 
-Now that you have the knowledge to modify theme files, you may be tempted to start changing the your favourite theme’s template files to do what you want. But before you do, consider this — what happens if the theme updates at a later date with new features or bug-fixes? Then there is a good chance you will lose your changes! It is always better to create a child theme.
+Now that you have this knowledge of the Template Hierarchy we can create different layouts for different parts of our site, giving us a lot of flexibility.
+
+> Exercise: In your Minimalist theme folder copy the `index.php` file and rename it to `front-page.php`. Edit this file (add some new HTML elements), save it and load your hompage. Your homepage should be different. Can you explain why?
 
 
 ## The WordPress Loop and WP Query
@@ -149,43 +153,42 @@ You'll find the loop used throughout WordPress themes and is the main way that c
 
 #### The Loop in action
 
-Let's take a look at `index.php` in our twentyseventeen theme — find it and open it up in your code editor. Can you find where the `while` loop begins and ends?
+Let's take a look at `index.php` in our Minimalist theme — find it and open it up in your code editor. Can you find where the `while` loop begins and ends?
 
 ```
 <?php 
 /* Start the Loop */
 while ( have_posts() ) : the_post();
-  get_template_part( 'template-parts/post/content', get_post_format() );
+  get_template_part( 'template-parts/content', '' );
 endwhile;
 ?>
 ```
 
-The `get_template_part()` line is WordPress function that, as you can guess, gets a template part from elsewhere in our theme — the first parameter is the file location and the second parameter `get_post_format()` is another built-in WordPress function that returns the type of content being fetched (e.g. post, page, etc).
+The `get_template_part()` line is WordPress function that, as you can guess, gets a template part from elsewhere in our theme.
 
 > This is an example of breaking up code into modular, resuable parts — this is good programming, right? Remember using partials in Handlebars? It's the same idea here.
 
 Let's open the content template part for a page. Find the following file in the twentyseventeen folder and open it:
 
-> `/template-parts/post/content-page.php`
+> `/template-parts/content-page.php`
 
-And you will see the following:
+And you will see the similar to the following: (code has been shortened)
 
 ```
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 	</header><!-- .entry-header -->
+
+	<?php the_post_thumbnail(); ?>
+
 	<div class="entry-content">
 		<?php
-			the_content();
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
-				'after'  => '</div>',
-			) );
+		the_content();
 		?>
 	</div><!-- .entry-content -->
-</article><!-- #post-## -->
+
+</article>
 ```
 
 You can see a mixture of HTML (`<article>`, `<header>`, `<h1>` etc) and PHP code. This is the content that will output for each iteration of our `while` loop. Try and edit the code to see what effect it has on the page output.
@@ -197,7 +200,7 @@ You can see a mixture of HTML (`<article>`, `<header>`, `<h1>` etc) and PHP code
 
 ## WP_Query
 
-So by now you may be thinking, that's okay but what if I wan't to fetch my own content and display it? Can we use the loop wherever we want? Can we have multiple loops on a page? For this we use WP_Query, a powerful and flexible WordPress class that allows us to use the Loop with our own options (arguments).
+So by now you may be thinking, that's okay but what if I wan't to fetch my own content and display it? Can we use the loop wherever we want? Can we have multiple loops on a page? For this we use WP_Query, a powerful and flexible WordPress class that allows us to use the Loop with our own options (by passing in arguments).
 
 **Exercise** 
 
@@ -243,8 +246,7 @@ First we set our arguments — in the above example we want to fetch five (`'po
 
 There are lots of available arguments you can pass to WP Query. Have a look at this code snippet and think to yourself how you could use some of these arguments in your theme:
 
-[Arguments list for WP Query](https://gist.github.com/luetkemj/2023628)
-
+> [Arguments list for WP Query](https://gist.github.com/luetkemj/2023628)
 
 ## Homework
 
@@ -261,8 +263,6 @@ Continue with your group project. You are trying to make your theme output match
 3. For the home page:
    - Add a Testimonial to match the client's layout design (check the [Site Content](/project-assets/site-content/) for the testimonials, or make up your own) 
    - The testimonial should only appear on the homepage. Remember the Template Hierarchy and use it to help guide you where the code should go. [HINT: you can either create a new file in your theme or use a [WordPress conditional tag](https://codex.wordpress.org/Conditional_Tags)]
-
-
 
 ## Appendix - Quiz Answers
 
