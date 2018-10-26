@@ -2,8 +2,8 @@
 
 **What we will learn today?**
 - [Editing WordPress Themes](#editing-wordPress-themes)
-  - [Changing Styles](#changing-styles)
-  - [Changing Markup](#changing-markup)
+  - [Editing Styles](#editing-styles)
+  - [Editing Markup](#editing-markup)
 - [The Template Hierarchy](#the-template-hierarchy)
 - [The WordPress Loop and WP Query](#the-wordpress-loop-and-wp-query)
 - [Homework](#homework)
@@ -32,7 +32,7 @@ With WordPress you can get a website up and running very quickly thanks to the t
 
  Next have a look at the project brief assets provided by the client...
 
-> The [Brand Guidelines](/project-assets/brand-guidelines/), the [Layout Design](/project-assets/layout.png) and the [Site Content](/project-assets/site-content/)
+> The [Brand Guidelines](/project-assets/brand-guidelines.md/), the [Layout Design](/project-assets/layout.png) and the [Site Content](/project-assets/site-content.md/)
 
 ...and let's start making some changes to our theme as per our client's requirements.
 
@@ -50,7 +50,7 @@ Save the file, refresh the site homepage in your browser and you should see your
 
 > BONUS: Can you show your design flair and add brand colours to other elements? How about variations of the brand colours? Try change the header background colour to a lighter tint of the brand orange. Hint: try `rgba()`.
 
-### Changing Markup
+### Editing Markup
 
 We've got some nice branding in place but the client also needs us to add a logo to the header and footer. But how and where does the theme output your websites content?
 
@@ -62,7 +62,7 @@ If you look again at our theme folder and open up the `index.php` file. You will
 
 Near the top of the `index.php` file you will see a call to `get_header();`. This is one of the many functions built in to WordPress to help you get content on to your website. This particular one looks for file in your theme folder called `header.php` and loads it. Likewise, there is a `get_footer()` that loads, you guessed it, the footer.php theme file. And as you'd expect, this is where our site's header and footer content is generated. Let's add our logo to both as required by the client's Layout Design...
 
-> 1. Download the clients [logo](project-assets/images/logo-text.png) and save it in your theme folder
+> 1. Download the clients [logo](project-assets/brand/logo-text.png) and save it in your theme folder
 > 2. Open `header.php` and find the `<div class="site-branding">` element. 
 > 3. Just after this element add an `<img>` tag with a `src` attribute with a value of `"logo-text.png"` and an `alt` attribute with a value of `"Glasgow Bike Store logo"`
 
@@ -77,7 +77,7 @@ Notice the `src` value - you can see that you can mix PHP code with HTML. Save t
 > 3. In your themes folder it's a good idea to keep all your images organised in one folder. Put the `logo-text.png` file in a folder called `img`. You will need to update your `src` attribute to include the folder in the path
 > 4. BONUS: Can you make the link to the homepage in the header be the logo image instead of text?
 
-Now try and repeat the above exercise with the footer - this time use the alternative [logo](project-assets/images/logo.png).
+Now try and repeat the above exercise with the footer - this time use the alternative [logo](project-assets/brand/logo.png).
 
 ## The Template Hierarchy
 
@@ -247,6 +247,12 @@ First we set our arguments — in the above example we want to fetch five (`'po
 There are lots of available arguments you can pass to WP Query. Have a look at this code snippet and think to yourself how you could use some of these arguments in your theme:
 
 > [Arguments list for WP Query](https://gist.github.com/luetkemj/2023628)
+
+## Further Reading
+
+1.  [The Loop in Action](https://codex.wordpress.org/The_Loop_in_Action)
+2.  [WP Query Codex Docs](https://codex.wordpress.org/Class_Reference/WP_Query)
+3.  [Interactive WP Query code generator](https://generatewp.com/wp_query/)
 
 ## Homework
 
