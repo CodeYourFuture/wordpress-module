@@ -25,13 +25,20 @@ _This is an example of the most basic WordPress plugin you can create._
 
 If you put this file in the `wp-content/plugins` directory directly, or in a subdirectory, you have a plugin.
 
-**Exercise**  
+#### Exercise
 _Create your own WordPress plugin and see if you can activate it from the WP dashboard. Explore [other headers](https://developer.wordpress.org/plugins/the-basics/header-requirements/) to add to your plugin, such as a version number or a link to your own website._
+
 
 > **Dive deeper**  
 > The best place to learn about WordPress plugin development is the "[Plugin Developer Handbook](https://developer.wordpress.org/plugins/)". It's "the official" guide to plugin development, from the WordPress developer team.
 
+### Actions and filters
+
 The way we typically add functionality in WordPress is by using [actions](https://developer.wordpress.org/plugins/hooks/actions/) and [filters](https://developer.wordpress.org/plugins/hooks/filters/).
+
+Actions allow you to execute a function at a specific point in the execution of the WordPress code. As an example, if you want to do something after WordPress has been initialised you can hook into the `init` action and provide a function with your code to run. Filters are similar to actions, with the main difference being that you can modify (or filter) data relevant to that action. In this tutorial we will focus on actions for now.
+
+Here is an example on how we can provide an anonymous function to an action:
 
 ```php
 <?php
