@@ -264,10 +264,10 @@ Continue with your group project. You are trying to make your theme output match
    - Use CSS to layout the header elements to match the client's layout design
 2. For the footer:
    - Add the company telephone number
-   - Add the social links (check the [Site Content](/project-assets/site-content/) for the URLs) 
+   - Add the social links (check the [Site Content](/project-assets/site-content.md/) for the URLs) 
    - Use CSS to layout the footer elements to match the client's layout design
 3. For the home page:
-   - Add a Testimonial to match the client's layout design (check the [Site Content](/project-assets/site-content/) for the testimonials, or make up your own) 
+   - Add a Testimonial to match the client's layout design (check the [Site Content](/project-assets/site-content.md/) for the testimonials, or make up your own) 
    - The testimonial should only appear on the homepage. Remember the Template Hierarchy and use it to help guide you where the code should go. [HINT: you can either create a new file in your theme or use a [WordPress conditional tag](https://codex.wordpress.org/Conditional_Tags)]
 
 ## Appendix - Quiz Answers
