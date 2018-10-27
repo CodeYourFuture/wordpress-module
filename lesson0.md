@@ -1,8 +1,10 @@
 # WordPress — Pre-class introduction
 
-The WordPress module is four weeks of classes designed to get you up and running with WordPress and learn its various features so that you can work with your fellow students to build a WordPress site. You will use use your existing HTML, CSS and JavaScript knowledge to create a WordPress theme and plugin and we will explore the WordPress REST API to write a small React web app. 
+The WordPress module is four weeks of classes designed to get you up and running with WordPress and learn its various features so that you can work with your fellow students to build a WordPress site. You will use use your existing HTML, CSS and JavaScript knowledge to create a WordPress theme and plugin and we will explore the WordPress REST API to write a small React web app.
 
-In preperation for the first class please read the following and try and complete the exercises. If you have any problems please post a message on Slack.
+=======
+
+In preparation for the first class please read the following and try and complete the exercises. If you have any problems please post a message on Slack.
 
 **What we will learn today?**
 - [What is WordPress?](#what-is-wordpress)
@@ -30,7 +32,7 @@ Some examples of WordPress are: [Kinning Park Complex](http://www.kinningparkcom
 
 There are two ways you can use WordPress:
 
-* Via [wordpress.com](https://wordpress.com/) — a massive multisite installation of WordPress owned by **Automattic**, where your site is hosted for you. It is free to use, however you are restricted from doing a lot of things (such as linking the site to your own domain or installing any plugins to extend functionality) unless you upgrade to a paid plan. 
+* Via [wordpress.com](https://wordpress.com/) — a massive multisite installation of WordPress owned by **Automattic**, where your site is hosted for you. It is free to use, however you are restricted from doing a lot of things (such as linking the site to your own domain or installing any plugins to extend functionality) unless you upgrade to a paid plan.
 
 * Via [wordpress.org](https://wordpress.org/) — where you can download WordPress to install on your own server, either via a hosting company or on your own computer. There are no restrictions whatsoever, but you are responsible for installing and setting it up.
 

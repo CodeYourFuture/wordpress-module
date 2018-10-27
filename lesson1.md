@@ -86,7 +86,7 @@ Read what the **WordPress Codex** says about [User Roles](https://codex.wordpres
 
 Throughout this WordPress module, we will use the exercises to build a website. We will start with a very basic theme and improve it as we go along.
 
-To start with, please read the [project description](https://github.com/CodeYourFuture/wordpress-module/blob/revision-2018/group-project.md) and then come back here to do the exercises:
+To start with, please read the [project description](/group-project.md) and then come back here to do the exercises:
 
 > Exercise: Download the [Minimalist theme](https://github.com/carmemias/minimalist-theme), install and activate it in your local WordPress install.
 
