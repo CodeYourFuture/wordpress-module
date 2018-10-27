@@ -13,7 +13,7 @@
 
 * have read the [project brief](/group-project.md)
 * have a local installation of WordPress on your computer
-* know where the WordPres theme and plugin folders are on your computer
+* know where the WordPress theme and plugin folders are on your computer
 * be able to login to the WordPress admin
 
 Let the mentors if there are any problems with the above.
@@ -48,11 +48,11 @@ We have some brand colours we need to incorporate. Open up `style.css` from the 
 
 Save the file, refresh the site homepage in your browser and you should see your changes. The client is going to be pleased!
 
-> BONUS: Can you show your design flair and add brand colours to other elements? How about variations of the brand colours? Try change the header background colour to a lighter tint of the brand orange. Hint: try `rgba()`.
+> BONUS: Can you show your design flair and add brand colours to other elements? How about variations of the brand colours? Try change the header background colour to a lighter tint of the brand orange.
 
 ### Editing Markup
 
-We've got some nice branding in place but the client also needs us to add a logo to the header and footer. But how and where does the theme output your websites content?
+We've got some nice branding in place but the client also needs us to add a logo to the header and footer. How and where does the theme output your websites content?
 
 If you look again at our theme folder and open up the `index.php` file. You will see a mix of code in here, some familiar HTML code and also some other code you may not recognise - this is called PHP and is the main programming language WordPress uses. All code between the `<?php` and `?>` tags is PHP, the rest is HTML.
 
@@ -60,7 +60,7 @@ If you look again at our theme folder and open up the `index.php` file. You will
 
 > Exercise: Have a look at the some `.php` files in the theme folder. Try to guess what the various parts do.
 
-Near the top of the `index.php` file you will see a call to `get_header();`. This is one of the many functions built in to WordPress to help you get content on to your website. This particular one looks for file in your theme folder called `header.php` and loads it. Likewise, there is a `get_footer()` that loads, you guessed it, the footer.php theme file. And as you'd expect, this is where our site's header and footer content is generated. Let's add our logo to both as required by the client's Layout Design...
+Near the top of the `index.php` file you will see a call to `get_header();`. This is one of the many functions built in to WordPress to help you get content on to your website. This particular one looks for file in your theme folder called `header.php` and loads it. Likewise, there is a `get_footer();` that loads, you guessed it, the `footer.php` theme file. And as you'd expect, this is where our site's header and footer content is generated. Let's add our logo to both as required by the client's Layout Design...
 
 > 1. Download the clients [logo](project-assets/brand/logo-text.png) and save it in your theme folder
 > 2. Open `header.php` and find the `<div class="site-branding">` element. 
@@ -73,7 +73,7 @@ Save the file, refresh the site homepage in your browser and... hmmm, something'
 Notice the `src` value - you can see that you can mix PHP code with HTML. Save the file, refresh the site homepage in your browser and. it should work. (If not, make sure you have a copy of the image in the theme folder). It doesn't look great yet however. Let's try the following...
 
 > 1. Make the image smaller. [HINT: You will need to go back to your `style.css` file and find a way of targeting the image]
-> 2. Align the text center and give it some margin
+> 2. Align the image center and give it some margin
 > 3. In your themes folder it's a good idea to keep all your images organised in one folder. Put the `logo-text.png` file in a folder called `img`. You will need to update your `src` attribute to include the folder in the path
 > 4. BONUS: Can you make the link to the homepage in the header be the logo image instead of text?
 
