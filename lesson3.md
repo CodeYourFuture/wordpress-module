@@ -54,3 +54,24 @@ Out of the box WordPress comes with a few different "post types" and as a WordPr
 
 #### Exercise
 _Come up with at least 3 different kinds of custom post types._
+
+In order to add post types WordPress has a function called `register_post_type()` which you can call from within an action, such as the `init` action which is run after WordPress has been initialised. It has a few different options that you can use to tweak your post type. For example you can decide if your post type is supposed to be public or only visible from the WordPress admin. Registering a custom post type for _people_ looks like this:
+
+```php
+add_action('init', function () {
+    register_post_type('people', [
+        'labels' => [
+            'name' => __('People'),
+            'singular_name' => __('Person'),
+        ],
+        'public' => true,
+        'has_archive' => true,
+    ]);
+});
+```
+
+The function takes an array of options, such as `has_archive` or `labels`, which itself takes an array of options.
+
+#### Exercise
+_Register your own custom post type from your plugin. Google around and see if you can find a way to change the default icon in the sidebar in the WordPress admin._
+
