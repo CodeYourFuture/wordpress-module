@@ -75,3 +75,11 @@ The function takes an array of options, such as `has_archive` or `labels`, which
 #### Exercise
 _Register your own custom post type from your plugin. Google around and see if you can find a way to change the default icon in the sidebar in the WordPress admin._
 
+The best place to go to find out what you can do with post types is the WordPress Codex: https://codex.wordpress.org/Post_Types.
+
+### Listing custom post types
+
+In the previous lesson on theme development you were introduced to the [template hierachy](https://github.com/CodeYourFuture/wordpress-module/blob/master/lesson2.md#the-template-hierarchy). Like posts and pages you can also create custom templates for listing your custom post types. In WordPress such a list is referred to as an "archive". **You will need this for your group project** to list bikes for sale.
+
+#### Exercise
+_Using the template hierarcy, figure out how to build a custom archive template for your custom post type._
