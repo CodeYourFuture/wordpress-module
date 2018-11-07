@@ -50,8 +50,7 @@ _Add an alert, like in the example above, to your WordPress plugin. What happens
 
 ## Custom post types
 
-Lorem ipsum.
+Out of the box WordPress comes with a few different "post types" and as a WordPress developer you can add your own programmatically. You already know two of them: (Blog) _posts_ and _pages_. For your group project you will have to create your own custom post type to represent bikes for sale. Post types can be used to store and group information about different kinds of content. A few examples of custom post types one could add could be _videos_, _employees_ or _recipes_.
 
-## Shortcodes
-
-Lorem ipsum.
+#### Exercise
+_Come up with at least 3 different kinds of custom post types._
