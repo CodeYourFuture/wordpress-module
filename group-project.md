@@ -52,8 +52,8 @@ To manage and display products a custom WordPress plugin is required. This plugi
 
 * Create a 'Product' custom post type
   * The custom post type should have text fields for: 'Product Name', 'Colour', 'Price' and 'SKU Code' as well as a textarea field for 'Description'
-* Create a custom WordPress shortcode that outputs the products on a page in a table. Preferably, data should be fetched via the WordPress REST API
-* Create a custom WordPress shortcode that outputs a form that allows logged on users to add new products to the database, preferably via the WordPress REST API
+* Create a custom archive template that outputs the products on a page in a table
+* Create a form that allows logged on users to add new products to the database, preferably via the WordPress REST API
 
 ### Design Guidelines
 
@@ -105,5 +105,4 @@ You will get bonus points if you can also complete the following:
 
 * [Creating A WordPress Plugin Is Easier Than You Think](https://www.wpbeaverbuilder.com/creating-wordpress-plugin-easier-think/)
 * [How to Create Custom Post Types In WordPress](https://www.hostinger.co.uk/tutorials/wordpress-custom-post-types)
-* [Quick And Easy WordPress Shortcode Tutorial](https://www.webascender.com/blog/quick-easy-wordpress-shortcode-tutorial/)
 * [A Quick Start Guide To The WordPress REST API](https://www.wpsuperstars.net/wordpress-rest-api/)
